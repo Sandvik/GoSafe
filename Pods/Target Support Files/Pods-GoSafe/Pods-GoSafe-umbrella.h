@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_EconomicVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_EconomicVersionString[];
+FOUNDATION_EXPORT double Pods_GoSafeVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_GoSafeVersionString[];
 

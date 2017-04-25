@@ -12,7 +12,7 @@
         <!--RegistrationViewController-->
         <scene sceneID="0HX-fv-83U">
             <objects>
-                <viewController storyboardIdentifier="RegistrationViewController" id="brO-0o-fdy" userLabel="RegistrationViewController" customClass="RegistrationViewController" customModule="Economic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegistrationViewController" id="brO-0o-fdy" userLabel="RegistrationViewController" customClass="RegistrationViewController" customModule="GoSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sh3-rf-8RY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,7 +70,7 @@
         <!--AddRegistrationControllerViewController-->
         <scene sceneID="Edb-0s-uJa">
             <objects>
-                <viewController storyboardIdentifier="AddRegistrationControllerViewController" title="TEst" id="fvY-Ke-lJo" userLabel="AddRegistrationControllerViewController" customClass="AddRegistrationControllerViewController" customModule="Economic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddRegistrationControllerViewController" title="TEst" id="fvY-Ke-lJo" userLabel="AddRegistrationControllerViewController" customClass="AddRegistrationControllerViewController" customModule="GoSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zVs-RD-PYv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -205,14 +205,14 @@
         <!--Main View Controller-->
         <scene sceneID="dgg-5h-bCh">
             <objects>
-                <viewController storyboardIdentifier="ViewController" id="Zdb-Hf-3w1" customClass="MainViewController" customModule="Economic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="Zdb-Hf-3w1" customClass="MainViewController" customModule="GoSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cKz-0Y-DNI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" id="Qsq-El-cgG" userLabel="Drawer View">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <connections>
                                     <segue destination="N57-2z-kWt" kind="embed" id="Rce-LP-GDw"/>
                                 </connections>
@@ -242,7 +242,7 @@
         <!--InvoicesViewController-->
         <scene sceneID="6d6-M5-ObG">
             <objects>
-                <viewController storyboardIdentifier="InvoicesViewController" id="Enx-eU-VNa" userLabel="InvoicesViewController" customClass="InvoicesViewController" customModule="Economic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InvoicesViewController" id="Enx-eU-VNa" userLabel="InvoicesViewController" customClass="InvoicesViewController" customModule="GoSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jL7-nL-gP2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -300,7 +300,7 @@
         <!--MapViewController-->
         <scene sceneID="8PE-n8-8q1">
             <objects>
-                <viewController storyboardIdentifier="MapViewController" id="T0F-3D-WRM" userLabel="MapViewController" customClass="MapViewController" customModule="Economic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapViewController" id="T0F-3D-WRM" userLabel="MapViewController" customClass="MapViewController" customModule="GoSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Rq-aJ-g5i">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
