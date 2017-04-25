@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>FRDLivelyButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Economic.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-EconomicTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-EconomicUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftValidator.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0E310540C1D35C885FF5E2D3B67CCF1D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>15583738D42DE505B4FF868444CD4A0B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>39818768AC5A30A791C4DDDEC11C0CB6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B4EEA629424D80882171BA4294EF2851</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CB657088D7F887FB70E176882321668F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

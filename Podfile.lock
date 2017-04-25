@@ -1,0 +1,25 @@
+PODS:
+  - FRDLivelyButton (1.1.3)
+  - SwiftValidator (4.0.0)
+
+DEPENDENCIES:
+  - FRDLivelyButton (~> 1.1.3)
+  - SwiftValidator (from `https://github.com/jpotts18/SwiftValidator.git`, branch `master`)
+
+EXTERNAL SOURCES:
+  SwiftValidator:
+    :branch: master
+    :git: https://github.com/jpotts18/SwiftValidator.git
+
+CHECKOUT OPTIONS:
+  SwiftValidator:
+    :commit: 2a6c23ad9efd76127f6109445515cb9780e5ad92
+    :git: https://github.com/jpotts18/SwiftValidator.git
+
+SPEC CHECKSUMS:
+  FRDLivelyButton: d67f7ecb801ac84427fca1ea832a63e972b72478
+  SwiftValidator: 25ded5ca1f10c05adf57f6ac82a72d28ac8d91af
+
+PODFILE CHECKSUM: 18a761229e7f966cc21588970318ed579e5184bc
+
+COCOAPODS: 1.2.0

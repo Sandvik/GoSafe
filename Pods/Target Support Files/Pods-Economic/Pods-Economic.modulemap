@@ -1,0 +1,6 @@
+framework module Pods_Economic {
+  umbrella header "Pods-Economic-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module FRDLivelyButton {
+  umbrella header "FRDLivelyButton-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  Economic
+
+  Created by Thomas H. Sandvik on 20/04/2017.
+  Copyright © 2017 Thomas H. Sandvik. All rights reserved.
+*/
+
+RetRegistrering = "Ret Registrering";
+IndtastRegistrering = "Indtast Registrering";
+PaakraevetFelt = "Feltet er påkrævet";
+GyldigtNavn = "Skal være gyldigt navn";
+KunNummer = "Kan kun være et nummer";
+KunGyldigtProjektnavn = "Skal være gyldigt projektnavn";
+RegistreringOverskrift = "Åbne registreringer";
+ForTrydKnap = "Fortryd";
+Registreringer = "Registreringer";
+Fakturaer = "Fakturaer";
+Faktura = "Faktura";
+Navn = "Navn";
+TidForbrugt = "Tid Forbrugt";
+ProjektNavn = "Projekt Navn";
+Fakturering = "Fakturering";
+

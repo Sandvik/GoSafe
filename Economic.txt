@@ -1,0 +1,51 @@
+Strategier:
+1: Generelt
+  - nib files / Storyboards : 
+  	Læs : https://www.toptal.com/ios/ios-user-interfaces-storyboards-vs-nibs-vs-custom-code
+  
+  - 3rd party libraries :
+    FRDLivelyButton, SwiftValidator og DPSlideMenuKit
+    FRDLivelyButton og SwiftValidator er brugt via CocoaPods og er henh. brugt for hurtigt at lave lækker knap 
+    og for at gøre validering lettere. Udgangspunkt for at bruge eksterne frameworks er at de er gennemskuelige og evt selv
+    kan udvides. Som fx DPSlideMenuKit som jeg har brugt 'internt' ved at lave et framework fremfor at bruge dens Pod: Fordi
+    DPSlideMenuKit ikke kunne customiseres via public variabler.
+    DPSlideMenuKit bliver brugt for let at kunne lave en menu
+
+2: Filstruktur
+   Jeg vælger Xcode's filstruktur, for at efterligne systemets.
+
+3. AppDelegate.swift:
+   Når projekt oprettes vil AppDelegate have et par UIApplicationDelegate metoder, der ikke gør noget-
+   Disse fjerne jeg, hvilket gælder for enhver fil der laves med en standard implementering.
+
+4. Netwærks lag
+   Jeg forestiller mig ikke at lave mit eget, men bruge eksternt bibliotek via cocoapods, fx AlamoFire
+
+5. Persistens
+   For persistenslaget ville jeg bruge en tredjepart som Realm, eller CoreData til at gemme - aldrig NSUserDefaults
+   Vigtigst er det, at jeg vil skabe en adskillelse mellem de modelobjekter og de objekter der passerer omkring i 
+   App. Modeller kan hurtigt skifter, hvorfor jeg skelner imellem RegistrationViewData og Registration.
+
+6. Separation between: Network, Parser.
+   Jeg har introduceret en Parser i projektet, som dog ikke bruges, men er implementeret for at vise den strategi jeg har omkring seperation
+
+7. Error handling
+   På UI niveau skal der i den virkerlige verden håndteres hvilke fejl der er sket. I min Parser ville jeg 
+   optimalt set via ParserDelegate give besked videre i systemet om fejl. I nærværende har jeg ikke ikke brugt min delegate -mulighed
+   	
+8. Unit Test
+   Der er lavet en delmængde af de nødvendige test, der burde laves i et virkeligt projekt - De nærværende kun for illustration
+   at projektet understøtter
+
+9. Warnings i koden - Kommentarer i koden
+   Jeg har efterladt TODO'er i koden. Normalt undgå disse, men de er bibeholdt for at vise jer
+   mine intentioner i en fuld virkende implementation.
+   Disse bliver fremhævet via script i Build Phase, dvs TODO:, FIXME: og REMOVE:
+   
+10. Localization
+	Der er bare som opmærksomhed localized til engelsk også
+
+11. Styleguide
+	Normalt bruger jeg denne som inspiration : https://github.com/raywenderlich/swift-style-guide
+	I nærværende har jeg ikke været konsekvent pga tid
+	   
