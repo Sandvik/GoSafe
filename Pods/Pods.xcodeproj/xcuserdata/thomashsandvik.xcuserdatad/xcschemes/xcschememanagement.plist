@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>BentoMap.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FRDLivelyButton.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>2B8F36CC9ECFFBF66422313509C05938</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>33F123B65170F5E1ACFC9BCC48A1E1A4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>39818768AC5A30A791C4DDDEC11C0CB6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>476C789EF4B6EDD1495457ABB9A7CFA1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AC4ACF940A5C3572807F76C03B43E5EC</key>
+		<key>68D198D3D7060AB2C3D811056C9A6790</key>
 		<dict>
 			<key>primary</key>
 			<true/>

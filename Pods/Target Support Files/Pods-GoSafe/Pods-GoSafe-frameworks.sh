@@ -89,10 +89,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/BentoMap/BentoMap.framework"
   install_framework "$BUILT_PRODUCTS_DIR/FRDLivelyButton/FRDLivelyButton.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SwiftValidator/SwiftValidator.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/BentoMap/BentoMap.framework"
   install_framework "$BUILT_PRODUCTS_DIR/FRDLivelyButton/FRDLivelyButton.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SwiftValidator/SwiftValidator.framework"
 fi

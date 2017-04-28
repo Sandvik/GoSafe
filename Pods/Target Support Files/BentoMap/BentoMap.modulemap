@@ -1,0 +1,6 @@
+framework module BentoMap {
+  umbrella header "BentoMap-umbrella.h"
+
+  export *
+  module * { export * }
+}

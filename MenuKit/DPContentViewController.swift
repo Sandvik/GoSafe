@@ -77,10 +77,10 @@ open class DPContentViewController: UIViewController {
     self.openDrawerButton.frame = CGRect(x: 8.0, y: 25.0, width: 34.0, height: 34.0)
     self.openDrawerButton.addTarget(self, action: #selector(openDrawer(_:)),
                                      for: .touchUpInside)
-    self.openDrawerButton.lineWidth = 34.0
-    self.openDrawerButton.lineMargin = 12
+    self.openDrawerButton.lineWidth = 20.0
+    self.openDrawerButton.lineMargin = 5
     self.openDrawerButton.lineCapRound = true
-    self.openDrawerButton.thickness = 6
+    self.openDrawerButton.thickness = 2
     self.openDrawerButton.slideLeftToRight = false
     self.openDrawerButton.backgroundColor = UIColor.clear
     self.openDrawerButton.cornerRadius = 0

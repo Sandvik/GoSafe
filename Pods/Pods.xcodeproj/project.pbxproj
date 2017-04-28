@@ -7,121 +7,180 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0383FE8FC90C9C121617A81BF36FB903 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		0F608C85DB3D209E8B05C80D569F8701 /* PasswordRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94CB3FD1250F86E9E6F083A5D250935 /* PasswordRule.swift */; };
-		0FC36A0ED277F699F735C710513D1625 /* AlphaNumericRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F22A0D851E8EF9F5110648B81B94F /* AlphaNumericRule.swift */; };
-		1080B368E95B7C7415BA874F1C5C874D /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A865743D0F85F15CC7C0F667788E0250 /* Rule.swift */; };
-		158C123D2E748DBB1B6E9AAB8CC61CCE /* AlphaRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B16F46E12F2665865CCC3CDBFAAC2B6 /* AlphaRule.swift */; };
-		1BDACF95E6B0D4C4FF0D4B98A8D5C924 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E913EC81CE8317446CD21D82A85467 /* ValidationError.swift */; };
-		1E33DB9309B84FF33648B6D7B06135F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		23909922D6C2728A8BF30949EA70C5F5 /* MaxLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D05C50ABB546A37F44443BBC6EA1CE3 /* MaxLengthRule.swift */; };
-		2A899A5E89259B384F1093F48384D070 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
-		2D19673B2EC93C69B42004360B890FF0 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E95499B95524488813A94417268E9F /* Validator.swift */; };
-		2D6250C44ECEB73C3D95AD7BDB3C2640 /* IPV4Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DAEC44E33C67DE67C12B7F2598818 /* IPV4Rule.swift */; };
-		384AF08D84B3F10669D167E90C999335 /* ConfirmRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDF7251635DEFD5CFA854CAA81F2051 /* ConfirmRule.swift */; };
-		3B49A1C1E93D7B0E02A997297FA5751D /* ZipCodeRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1367404F3092904FA1B5B2AC66DF090 /* ZipCodeRule.swift */; };
-		3CC2A8AAB383D2F0F6EDA906A72D2C5E /* FullNameRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3B9B1563B38AA2A0508F45DC11CC4B /* FullNameRule.swift */; };
-		4416A3E417C457DD0EDF7F7ABE09B1FC /* FloatRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7485EC410D0CAB33BB886B6F922F05CD /* FloatRule.swift */; };
-		4C0F07DC60CD5D41EAFCB16D1374C235 /* HexColorRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF88442E7BE7B59B793D02303FF9448 /* HexColorRule.swift */; };
-		5C2840A17FADA2F4E69BBAE059CE62E5 /* FRDLivelyButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 984A7C884B457F4733EF49C3336E8D34 /* FRDLivelyButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5FAE4C5FD156BF4821492A07A6402046 /* Pods-GoSafe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23AA37A962851765D74A65CEDD296AC8 /* Pods-GoSafe-dummy.m */; };
-		6B84CAF12F6D6F7E944344BC8FDD6587 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC1DBC29DC9C176119D42D8D832378C /* Validatable.swift */; };
-		71E1943CB2093915832EDB8679BB68A1 /* ValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EC44B0AEF91B2E298106A2A108D32 /* ValidationRule.swift */; };
-		7F5D60EF2CB1E481FA4AE444C19F6DD8 /* CharacterSetRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4DC302BADB88C4964CCD13B6EB4030 /* CharacterSetRule.swift */; };
-		8CF13C7224618E5EF0AD31AEB982C855 /* SwiftValidator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F89BE0ED8E5AB8F9A1A54A3EDA7FFE3 /* SwiftValidator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F43A3403B60AF22B605137611557425 /* SwiftValidator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB25FB9752085845279F5BF7C4968CD /* SwiftValidator-dummy.m */; };
-		98E05105602FEC4788B3D10F405183AE /* RequiredRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8254B55B116349C7F4798EE2B624FA46 /* RequiredRule.swift */; };
-		9AD26FB3DCEC234AC5A3FF6E56359022 /* Pods-GoSafe-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B543F2418B686C16E431214FF2ED66A /* Pods-GoSafe-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A42F14CA0CE347E16C0D0E5CBAB67F11 /* FRDLivelyButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A466B66D41188D848C0BD2BFD39B1A2 /* FRDLivelyButton-dummy.m */; };
-		BB2E0AAE2A16A52C43F073712FDC6314 /* MinLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F804A999A8214EC8582A8BE451CC7AA8 /* MinLengthRule.swift */; };
-		C276A76DE1E352ACDED66A2655C82E05 /* FRDLivelyButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A7AA8A1DDD08573B2C9D29FE4016B2F /* FRDLivelyButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CE5A18E6F9B6BE082DBA1506674377F5 /* ISBNRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB4FE899FA8B1B88F4E01ADFEEB0B51 /* ISBNRule.swift */; };
-		D5F2CACD09332C711F181FA0E4426822 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		E2114E9629F760D789DD9F6FC9D26F3D /* EmailRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D9A5706A8A1E1FB54EEE6B2E1861CE /* EmailRule.swift */; };
-		E5B2AD29A711305F2F518137DA46009D /* ValidationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAD413557A2E8702E602B7A07817FEE /* ValidationDelegate.swift */; };
-		E68A5D1FF5198445AFEED120ADA2CDF0 /* ExactLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657F59C7470E55F20CA8357168E43FD0 /* ExactLengthRule.swift */; };
-		EB8ACC0F71E7EB1ABD0D1CCAF84E5341 /* PhoneNumberRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A67C31C44A917A424884647EC2EA88A /* PhoneNumberRule.swift */; };
-		F0DF244B8346DA3A46E1AAE984644DB5 /* ValidatorDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2557454CE8473D9CCDAD2E8499D1E4A7 /* ValidatorDictionary.swift */; };
-		F5A4BE238FDC35732C341C032702FA5D /* FRDLivelyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 391F0890775E3C16FDED9ECF9BF28543 /* FRDLivelyButton.m */; };
-		FEA78419CB4B39C6E6F8E7E49059ED54 /* RegexRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C697989417B9705F0758FD9EF51EEC80 /* RegexRule.swift */; };
+		0383FE8FC90C9C121617A81BF36FB903 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63AE25E005002286C8AD2A3AEB652EF0 /* Foundation.framework */; };
+		08186496FF80CB59F05A351BF70BD485 /* PhoneNumberRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26335B283D006571D52B16932728E812 /* PhoneNumberRule.swift */; };
+		0949FEBAB1786A281DC6EF7F33FE266F /* AlphaRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D664FB75C417700ABC9A494E46C74DC0 /* AlphaRule.swift */; };
+		0974A64AC75DF99A33C1AB1CE95B0DF7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A5BACAEB2D40A04637B26529345DA0 /* MapKit.framework */; };
+		0C96BCEDDF326142F5AA0DC95C8D2A2A /* AlphaNumericRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A745ABE22AAA8A6F6794DD2D119BB0 /* AlphaNumericRule.swift */; };
+		0EFF90D4761617DCC0B2771688E899A0 /* MKMapRect+BentoRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D289776FF3D414F837E93EE6641FEA /* MKMapRect+BentoRect.swift */; };
+		19E07A6DB89B7634825B1BF9EF7D277C /* IPV4Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5700C14CEFBFADFA1CB5A3AF1992AE52 /* IPV4Rule.swift */; };
+		1A4464E92B472CE0818AADE474020FC7 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E39FBABB4EE0E9944A870D7CA99539C /* Validatable.swift */; };
+		20E479AD2C7125624C991EADCE3993C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63AE25E005002286C8AD2A3AEB652EF0 /* Foundation.framework */; };
+		2B480D0B9B67F33A15084D0001230EC4 /* ValidationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA3E91939CE6E9B1F16B3DC5E3F206 /* ValidationDelegate.swift */; };
+		3AF588953B99E2E6122A4F02CAC35899 /* EmailRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BF0B88B555BDC4A53D74A66A8E8631 /* EmailRule.swift */; };
+		3DEEFFB16589CE48FC5B6EDD1B2111D2 /* SwiftValidator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E8155DC15DCE93EC075538B9FEBE58FD /* SwiftValidator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		408C5BC5EE239887E25956C6F8A63686 /* RequiredRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384663EE2C253D884695E61B6F6E83D /* RequiredRule.swift */; };
+		43DD31D3A314812EF1DB24999159F804 /* OrdinalNodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21265AAE81D4BDBEE96F56D69392B10C /* OrdinalNodes.swift */; };
+		456D3306BC8B35A058D30F27BD015D8D /* HexColorRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959DA3618168874C8DE6AAEF5C5BFABC /* HexColorRule.swift */; };
+		47F4090FD2ECDAC265C7F6510BDC46AF /* ConfirmRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFED216851829C7136A01A5F21BD0AF7 /* ConfirmRule.swift */; };
+		4AA1CD44ED06F225CD5069B64893B6B8 /* PasswordRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C5C598D0F26466EF39A1D3D149A388 /* PasswordRule.swift */; };
+		5A39E4D51B513654B08351B5734D8882 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63AE25E005002286C8AD2A3AEB652EF0 /* Foundation.framework */; };
+		5AEE481F87F598AB3923C95EF31EC84E /* MKMapPoint+BentoCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4485F8F0B2207E3B75921F3732C5AAD /* MKMapPoint+BentoCoordinate.swift */; };
+		5C2840A17FADA2F4E69BBAE059CE62E5 /* FRDLivelyButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F708046A71AC9E6FB245B5A13F1582 /* FRDLivelyButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6569179AC30403734E1578CB2468DF56 /* OptionalOr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBE4AB3F0C510CE9029113F4014E33E /* OptionalOr.swift */; };
+		65F00D0C7E235A7D2442EEED46E4B336 /* QuadTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDD234FA7E65E99C9F391464410D30C /* QuadTree.swift */; };
+		6F947A9ABC4B9E3AC0B6CA664F7A2C51 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DCB329D97746F2B325731C1626A844 /* ValidationError.swift */; };
+		7950453313A75430001824621ED119E0 /* ValidatorDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F274A855A0510C665DC6F272A6871B /* ValidatorDictionary.swift */; };
+		8212B6DCC88F6E3E0F8DCF65C7D25D61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63AE25E005002286C8AD2A3AEB652EF0 /* Foundation.framework */; };
+		8550C79F7F8E41527C5E976E8FCBFDE1 /* ValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6154F699FE395FBD0CEF81344618C9E /* ValidationRule.swift */; };
+		8C208AE8F0AE55BDD3BCD560AE81288E /* ZipCodeRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759075B7C43D6768D8F641887C07FEE2 /* ZipCodeRule.swift */; };
+		9517C6620B1F3C6A299327C7E2559E1C /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = C41632EF80E94EB240E316D3509EEC55 /* Info.plist */; };
+		955478581CDBD0E930EA71AC8A35D08D /* Pods-GoSafe-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B543F2418B686C16E431214FF2ED66A /* Pods-GoSafe-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95C109C90B013A27FD788C0F9C2665C7 /* MinLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B20489BFE24F21FC927971EEA6EAAD /* MinLengthRule.swift */; };
+		98A781784AE78E69B583BD18EF122747 /* BentoBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7377BF89DB2222C4FB1211AF9DD6108D /* BentoBox.swift */; };
+		A1ACA306F9B1AFE33ADA056F6F4F489E /* CollectionTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23BEEC43712F8A9E04EB226FE6DD652 /* CollectionTypeExtensions.swift */; };
+		A42F14CA0CE347E16C0D0E5CBAB67F11 /* FRDLivelyButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C225FC29F0AA15FD657121D18E69EE77 /* FRDLivelyButton-dummy.m */; };
+		A6D02EC89C63BAE201609A5793F849B4 /* BentoMap-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03436FC0BC2D933473F3E11AFB015666 /* BentoMap-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB902CC97243D9BEE4D41C6089426AA5 /* SwiftValidator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B40EEE273C008957AA27D92525894B4 /* SwiftValidator-dummy.m */; };
+		AD48F80284A2078CE796B20D12B8F631 /* MaxLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34AD87E5515ADE7067604B0FADF9BBF /* MaxLengthRule.swift */; };
+		B3A30F21C26779DBEB6DB11AA4689D30 /* QuadrantWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE812330E7356AB9EF64D2D3FFF7F8F /* QuadrantWrapper.swift */; };
+		B68E743856E12BBFF1418FD81F2BE27A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F915CAD7A4DC99C94A7822844D8867 /* UIKit.framework */; };
+		BC097863E4A3C43FE8B2AC1CA88FADCC /* ExactLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753DE014BAA1D05EE35C2430C589DDEF /* ExactLengthRule.swift */; };
+		C276A76DE1E352ACDED66A2655C82E05 /* FRDLivelyButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E58BB15D2150C54B485102706C262CC /* FRDLivelyButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C56D3CEB0FC629008D58DE34DA2B3453 /* RegexRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B696FF98889086B999A558A03FF0E461 /* RegexRule.swift */; };
+		D0DE1478C79553BAD19BD3398985DB3B /* CLLocationCoordinate2D+BentoCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E86741888F8C7A5B530B073402CE4D4 /* CLLocationCoordinate2D+BentoCoordinate.swift */; };
+		D48B7940C4C6FE8EE365987D3FC4D919 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5FC07411A1F34A91CCD308F7822DFC /* Rule.swift */; };
+		D4C4BFA7852531076FECEF6B99D6A0C2 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67222CEE26EA60BB15B44679BB78E7FD /* Box.swift */; };
+		D51559BAF1762B504DA7B5B763B1A09E /* QuadTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F963EC5D823AF06FC7351CA22635A74 /* QuadTreeNode.swift */; };
+		D583175962E4359156096CB113960CE6 /* CGPoint+BentoCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D96A795BA1378164001FFA74B9B8E80 /* CGPoint+BentoCoordinate.swift */; };
+		E8AE78534D5A644F1E6A734515C0C504 /* Pods-GoSafe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23AA37A962851765D74A65CEDD296AC8 /* Pods-GoSafe-dummy.m */; };
+		E8F31249094E0B524B3A141E9F601150 /* ISBNRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898D7AE9D52C0B21D318B1355FC9CB0C /* ISBNRule.swift */; };
+		E97EF8EFB04897641DAC893176B4B675 /* FullNameRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4B2E8A2BD1DFC6E311676A42451B25 /* FullNameRule.swift */; };
+		EC9052228FC71FB71CAE1429A053C173 /* QuadTreeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1721BD0FE6B2906A1B3737B1ACC736E2 /* QuadTreeResult.swift */; };
+		F0D31E286DC4C3026556595A07C7669A /* BentoMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EAB43A5E0CA577010C65DCFBDC3DD3B /* BentoMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F276AFE381E07662EA7511A18D19B56F /* FloatRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6C3D120DCC40663E6BAA14ED82C361 /* FloatRule.swift */; };
+		F574387717D81A7DB81C6C5FB60377DB /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67655E44C21488F7F6DE1AD92ED7D2B7 /* Validator.swift */; };
+		F5A4BE238FDC35732C341C032702FA5D /* FRDLivelyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A586DA80EDCF7236B210502055302772 /* FRDLivelyButton.m */; };
+		F8AE70490E57BA9D804EEE960C68C67F /* BentoMap-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02DAF9654AAC3151069EAC08211F5BAC /* BentoMap-dummy.m */; };
+		FA663C6B114F41AD92449DF30C55B697 /* CGRect+BentoRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC84866E5BA8548D61F7A1AC95F8A15F /* CGRect+BentoRect.swift */; };
+		FCFFC394AEC76B4E6C69A7E521990573 /* CharacterSetRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2590D412A8C8D15A0B1C45C0ADCC45E /* CharacterSetRule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6A94D46C6759AE696DC1BE3ECAB0F240 /* PBXContainerItemProxy */ = {
+		02F9E5293E577E6B466763228C71ACFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33F123B65170F5E1ACFC9BCC48A1E1A4;
+			remoteInfo = BentoMap;
+		};
+		308938C47BB1976E02CDC738B03D1AD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B8F36CC9ECFFBF66422313509C05938;
+			remoteInfo = SwiftValidator;
+		};
+		4EEBB9622D284A32594C2DC7F4D05F46 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 39818768AC5A30A791C4DDDEC11C0CB6;
 			remoteInfo = FRDLivelyButton;
 		};
-		A32B73D4F8CD8D890A52606EA1C8CAC7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AC4ACF940A5C3572807F76C03B43E5EC;
-			remoteInfo = SwiftValidator;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0DC1DBC29DC9C176119D42D8D832378C /* Validatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validatable.swift; path = SwiftValidator/Core/Validatable.swift; sourceTree = "<group>"; };
-		0EB471772AE4E30EF7A7CFC7F2928454 /* FRDLivelyButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FRDLivelyButton-prefix.pch"; sourceTree = "<group>"; };
-		16D9A5706A8A1E1FB54EEE6B2E1861CE /* EmailRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmailRule.swift; path = SwiftValidator/Rules/EmailRule.swift; sourceTree = "<group>"; };
-		1A466B66D41188D848C0BD2BFD39B1A2 /* FRDLivelyButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FRDLivelyButton-dummy.m"; sourceTree = "<group>"; };
+		0270B989E875A69FE0D60F6EEA4EA1D3 /* SwiftValidator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftValidator.xcconfig; sourceTree = "<group>"; };
+		02DAF9654AAC3151069EAC08211F5BAC /* BentoMap-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BentoMap-dummy.m"; sourceTree = "<group>"; };
+		03436FC0BC2D933473F3E11AFB015666 /* BentoMap-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BentoMap-umbrella.h"; sourceTree = "<group>"; };
+		0384663EE2C253D884695E61B6F6E83D /* RequiredRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequiredRule.swift; path = SwiftValidator/Rules/RequiredRule.swift; sourceTree = "<group>"; };
+		07A745ABE22AAA8A6F6794DD2D119BB0 /* AlphaNumericRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlphaNumericRule.swift; path = SwiftValidator/Rules/AlphaNumericRule.swift; sourceTree = "<group>"; };
+		0AFA3E91939CE6E9B1F16B3DC5E3F206 /* ValidationDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationDelegate.swift; path = SwiftValidator/Core/ValidationDelegate.swift; sourceTree = "<group>"; };
+		0DEB1F3D116F858BA004F5C11953610E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1721BD0FE6B2906A1B3737B1ACC736E2 /* QuadTreeResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuadTreeResult.swift; path = BentoMap/QuadTreeResult.swift; sourceTree = "<group>"; };
+		18F2B82E222666F5BE5A40276F971A98 /* Pods_GoSafe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GoSafe.framework; path = "Pods-GoSafe.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F5FC07411A1F34A91CCD308F7822DFC /* Rule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rule.swift; path = SwiftValidator/Rules/Rule.swift; sourceTree = "<group>"; };
+		21265AAE81D4BDBEE96F56D69392B10C /* OrdinalNodes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrdinalNodes.swift; path = BentoMap/OrdinalNodes.swift; sourceTree = "<group>"; };
 		23AA37A962851765D74A65CEDD296AC8 /* Pods-GoSafe-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GoSafe-dummy.m"; sourceTree = "<group>"; };
-		2557454CE8473D9CCDAD2E8499D1E4A7 /* ValidatorDictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidatorDictionary.swift; path = SwiftValidator/Core/ValidatorDictionary.swift; sourceTree = "<group>"; };
-		29F2FBB75E641B620DCAD4D9F98AE17F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26335B283D006571D52B16932728E812 /* PhoneNumberRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhoneNumberRule.swift; path = SwiftValidator/Rules/PhoneNumberRule.swift; sourceTree = "<group>"; };
 		2B543F2418B686C16E431214FF2ED66A /* Pods-GoSafe-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GoSafe-umbrella.h"; sourceTree = "<group>"; };
-		2EAD413557A2E8702E602B7A07817FEE /* ValidationDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationDelegate.swift; path = SwiftValidator/Core/ValidationDelegate.swift; sourceTree = "<group>"; };
+		2B958B9D32DF07E1819744C4B7D549E8 /* SwiftValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftValidator.framework; path = SwiftValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FFC9844CA4ABD8D7EA2A4A45E695F0D /* Pods-GoSafe-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GoSafe-acknowledgements.markdown"; sourceTree = "<group>"; };
-		391F0890775E3C16FDED9ECF9BF28543 /* FRDLivelyButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FRDLivelyButton.m; path = FRDLivelyButton/FRDLivelyButton.m; sourceTree = "<group>"; };
-		3B16F46E12F2665865CCC3CDBFAAC2B6 /* AlphaRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlphaRule.swift; path = SwiftValidator/Rules/AlphaRule.swift; sourceTree = "<group>"; };
-		3F75661FD7F1A662968CA08E9661E7FA /* FRDLivelyButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FRDLivelyButton.modulemap; sourceTree = "<group>"; };
-		4F4DC302BADB88C4964CCD13B6EB4030 /* CharacterSetRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CharacterSetRule.swift; path = SwiftValidator/Rules/CharacterSetRule.swift; sourceTree = "<group>"; };
+		31DCB329D97746F2B325731C1626A844 /* ValidationError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationError.swift; path = SwiftValidator/Core/ValidationError.swift; sourceTree = "<group>"; };
+		33F274A855A0510C665DC6F272A6871B /* ValidatorDictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidatorDictionary.swift; path = SwiftValidator/Core/ValidatorDictionary.swift; sourceTree = "<group>"; };
+		369FC05DB938D106CC36F4E2A086CDE1 /* BentoMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BentoMap.framework; path = BentoMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E86741888F8C7A5B530B073402CE4D4 /* CLLocationCoordinate2D+BentoCoordinate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CLLocationCoordinate2D+BentoCoordinate.swift"; path = "BentoMap/Extensions/CLLocationCoordinate2D+BentoCoordinate.swift"; sourceTree = "<group>"; };
+		3F963EC5D823AF06FC7351CA22635A74 /* QuadTreeNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuadTreeNode.swift; path = BentoMap/QuadTreeNode.swift; sourceTree = "<group>"; };
+		4D96A795BA1378164001FFA74B9B8E80 /* CGPoint+BentoCoordinate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGPoint+BentoCoordinate.swift"; path = "BentoMap/Extensions/CGPoint+BentoCoordinate.swift"; sourceTree = "<group>"; };
 		54B763D8E66D98FB7E30B1C0D94B4378 /* Pods-GoSafe-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GoSafe-frameworks.sh"; sourceTree = "<group>"; };
-		5F89BE0ED8E5AB8F9A1A54A3EDA7FFE3 /* SwiftValidator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftValidator-umbrella.h"; sourceTree = "<group>"; };
-		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		657F59C7470E55F20CA8357168E43FD0 /* ExactLengthRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExactLengthRule.swift; path = SwiftValidator/Rules/ExactLengthRule.swift; sourceTree = "<group>"; };
-		6D05C50ABB546A37F44443BBC6EA1CE3 /* MaxLengthRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaxLengthRule.swift; path = SwiftValidator/Rules/MaxLengthRule.swift; sourceTree = "<group>"; };
-		6FDF7251635DEFD5CFA854CAA81F2051 /* ConfirmRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConfirmRule.swift; path = SwiftValidator/Rules/ConfirmRule.swift; sourceTree = "<group>"; };
-		71E913EC81CE8317446CD21D82A85467 /* ValidationError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationError.swift; path = SwiftValidator/Core/ValidationError.swift; sourceTree = "<group>"; };
-		7485EC410D0CAB33BB886B6F922F05CD /* FloatRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatRule.swift; path = SwiftValidator/Rules/FloatRule.swift; sourceTree = "<group>"; };
-		76459C21C246D2B030762293D6DAEAEE /* SwiftValidator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftValidator.modulemap; sourceTree = "<group>"; };
-		7AB25FB9752085845279F5BF7C4968CD /* SwiftValidator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftValidator-dummy.m"; sourceTree = "<group>"; };
-		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		8254B55B116349C7F4798EE2B624FA46 /* RequiredRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequiredRule.swift; path = SwiftValidator/Rules/RequiredRule.swift; sourceTree = "<group>"; };
-		845F22A0D851E8EF9F5110648B81B94F /* AlphaNumericRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlphaNumericRule.swift; path = SwiftValidator/Rules/AlphaNumericRule.swift; sourceTree = "<group>"; };
-		8A7AA8A1DDD08573B2C9D29FE4016B2F /* FRDLivelyButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FRDLivelyButton.h; path = FRDLivelyButton/FRDLivelyButton.h; sourceTree = "<group>"; };
+		5700C14CEFBFADFA1CB5A3AF1992AE52 /* IPV4Rule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IPV4Rule.swift; path = SwiftValidator/Rules/IPV4Rule.swift; sourceTree = "<group>"; };
+		5B6C3D120DCC40663E6BAA14ED82C361 /* FloatRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatRule.swift; path = SwiftValidator/Rules/FloatRule.swift; sourceTree = "<group>"; };
+		60B20489BFE24F21FC927971EEA6EAAD /* MinLengthRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinLengthRule.swift; path = SwiftValidator/Rules/MinLengthRule.swift; sourceTree = "<group>"; };
+		63AE25E005002286C8AD2A3AEB652EF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		67222CEE26EA60BB15B44679BB78E7FD /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = BentoMap/Box.swift; sourceTree = "<group>"; };
+		67655E44C21488F7F6DE1AD92ED7D2B7 /* Validator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validator.swift; path = SwiftValidator/Core/Validator.swift; sourceTree = "<group>"; };
+		6FDD234FA7E65E99C9F391464410D30C /* QuadTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuadTree.swift; path = BentoMap/QuadTree.swift; sourceTree = "<group>"; };
+		7377BF89DB2222C4FB1211AF9DD6108D /* BentoBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BentoBox.swift; path = BentoMap/BentoBox.swift; sourceTree = "<group>"; };
+		74F915CAD7A4DC99C94A7822844D8867 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		753DE014BAA1D05EE35C2430C589DDEF /* ExactLengthRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExactLengthRule.swift; path = SwiftValidator/Rules/ExactLengthRule.swift; sourceTree = "<group>"; };
+		759075B7C43D6768D8F641887C07FEE2 /* ZipCodeRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZipCodeRule.swift; path = SwiftValidator/Rules/ZipCodeRule.swift; sourceTree = "<group>"; };
+		7E39FBABB4EE0E9944A870D7CA99539C /* Validatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validatable.swift; path = SwiftValidator/Core/Validatable.swift; sourceTree = "<group>"; };
+		82D289776FF3D414F837E93EE6641FEA /* MKMapRect+BentoRect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MKMapRect+BentoRect.swift"; path = "BentoMap/Extensions/MKMapRect+BentoRect.swift"; sourceTree = "<group>"; };
+		85BF0B88B555BDC4A53D74A66A8E8631 /* EmailRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmailRule.swift; path = SwiftValidator/Rules/EmailRule.swift; sourceTree = "<group>"; };
+		87282359EC480F635FB951A65C9CE1C5 /* FRDLivelyButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FRDLivelyButton.modulemap; sourceTree = "<group>"; };
+		898D7AE9D52C0B21D318B1355FC9CB0C /* ISBNRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISBNRule.swift; path = SwiftValidator/Rules/ISBNRule.swift; sourceTree = "<group>"; };
+		8B40EEE273C008957AA27D92525894B4 /* SwiftValidator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftValidator-dummy.m"; sourceTree = "<group>"; };
+		8E58BB15D2150C54B485102706C262CC /* FRDLivelyButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FRDLivelyButton.h; path = FRDLivelyButton/FRDLivelyButton.h; sourceTree = "<group>"; };
 		9008F81A9909937A5A9F5A24B5687EA6 /* Pods-GoSafe.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GoSafe.modulemap"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93CF340B066EB9BFD6BCF7214E16C506 /* BentoMap-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BentoMap-prefix.pch"; sourceTree = "<group>"; };
+		959DA3618168874C8DE6AAEF5C5BFABC /* HexColorRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexColorRule.swift; path = SwiftValidator/Rules/HexColorRule.swift; sourceTree = "<group>"; };
 		96717CD4BB938A3577769111C648E371 /* Pods-GoSafe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoSafe.release.xcconfig"; sourceTree = "<group>"; };
-		984A7C884B457F4733EF49C3336E8D34 /* FRDLivelyButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FRDLivelyButton-umbrella.h"; sourceTree = "<group>"; };
-		9A67C31C44A917A424884647EC2EA88A /* PhoneNumberRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhoneNumberRule.swift; path = SwiftValidator/Rules/PhoneNumberRule.swift; sourceTree = "<group>"; };
-		9FF88442E7BE7B59B793D02303FF9448 /* HexColorRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexColorRule.swift; path = SwiftValidator/Rules/HexColorRule.swift; sourceTree = "<group>"; };
-		A865743D0F85F15CC7C0F667788E0250 /* Rule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rule.swift; path = SwiftValidator/Rules/Rule.swift; sourceTree = "<group>"; };
-		A8763278DA1E463C8A3C26B5B6A2F7FB /* SwiftValidator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftValidator-prefix.pch"; sourceTree = "<group>"; };
-		AA2B16BE90C8E8ECEA36F6C811E3DA24 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AFB4FE899FA8B1B88F4E01ADFEEB0B51 /* ISBNRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISBNRule.swift; path = SwiftValidator/Rules/ISBNRule.swift; sourceTree = "<group>"; };
+		9DBE4AB3F0C510CE9029113F4014E33E /* OptionalOr.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OptionalOr.swift; path = BentoMap/OptionalOr.swift; sourceTree = "<group>"; };
+		9EAB43A5E0CA577010C65DCFBDC3DD3B /* BentoMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BentoMap.h; path = BentoMap/Resources/BentoMap.h; sourceTree = "<group>"; };
+		A4F708046A71AC9E6FB245B5A13F1582 /* FRDLivelyButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FRDLivelyButton-umbrella.h"; sourceTree = "<group>"; };
+		A54A1AE09D5431355EBA524529C0867E /* FRDLivelyButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FRDLivelyButton.framework; path = FRDLivelyButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A586DA80EDCF7236B210502055302772 /* FRDLivelyButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FRDLivelyButton.m; path = FRDLivelyButton/FRDLivelyButton.m; sourceTree = "<group>"; };
+		A5A5BACAEB2D40A04637B26529345DA0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
+		A6394F23E5D1039122D405679CA242DF /* BentoMap.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BentoMap.xcconfig; sourceTree = "<group>"; };
+		B696FF98889086B999A558A03FF0E461 /* RegexRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegexRule.swift; path = SwiftValidator/Rules/RegexRule.swift; sourceTree = "<group>"; };
+		BD9ED68120857523898F7AA0036C7ECF /* BentoMap.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BentoMap.modulemap; sourceTree = "<group>"; };
+		C225FC29F0AA15FD657121D18E69EE77 /* FRDLivelyButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FRDLivelyButton-dummy.m"; sourceTree = "<group>"; };
+		C2590D412A8C8D15A0B1C45C0ADCC45E /* CharacterSetRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CharacterSetRule.swift; path = SwiftValidator/Rules/CharacterSetRule.swift; sourceTree = "<group>"; };
+		C41632EF80E94EB240E316D3509EEC55 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = BentoMap/Resources/Info.plist; sourceTree = "<group>"; };
 		C448D0FD427D43A92DA8CFB4732DF31E /* Pods-GoSafe-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GoSafe-resources.sh"; sourceTree = "<group>"; };
-		C697989417B9705F0758FD9EF51EEC80 /* RegexRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegexRule.swift; path = SwiftValidator/Rules/RegexRule.swift; sourceTree = "<group>"; };
-		CA0EC44B0AEF91B2E298106A2A108D32 /* ValidationRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRule.swift; path = SwiftValidator/Rules/ValidationRule.swift; sourceTree = "<group>"; };
-		CA3B9B1563B38AA2A0508F45DC11CC4B /* FullNameRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FullNameRule.swift; path = SwiftValidator/Rules/FullNameRule.swift; sourceTree = "<group>"; };
-		CDE7AE6A626A31B267346B0E32818818 /* SwiftValidator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftValidator.xcconfig; sourceTree = "<group>"; };
-		D59DAEC44E33C67DE67C12B7F2598818 /* IPV4Rule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IPV4Rule.swift; path = SwiftValidator/Rules/IPV4Rule.swift; sourceTree = "<group>"; };
-		D620F91D3C1A1B96FEFB2FE5331BC801 /* SwiftValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftValidator.framework; path = SwiftValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D90ED3FA506820D46C6EF33A49AE547D /* FRDLivelyButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FRDLivelyButton.framework; path = FRDLivelyButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D94CB3FD1250F86E9E6F083A5D250935 /* PasswordRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasswordRule.swift; path = SwiftValidator/Rules/PasswordRule.swift; sourceTree = "<group>"; };
-		DA4CACB314E171E89A224F20845E1391 /* FRDLivelyButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FRDLivelyButton.xcconfig; sourceTree = "<group>"; };
-		DB766BE842E72DC7A3CB4146BE1830A0 /* Pods_GoSafe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GoSafe.framework; path = "Pods-GoSafe.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7A34819DCA40A62D6F49646227D3FA5 /* SwiftValidator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftValidator.modulemap; sourceTree = "<group>"; };
+		CCA234A36F38B9B6418BEBA6CC9DDDEA /* FRDLivelyButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FRDLivelyButton-prefix.pch"; sourceTree = "<group>"; };
+		CD13249AA92C9A0C389394B8E5515325 /* FRDLivelyButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FRDLivelyButton.xcconfig; sourceTree = "<group>"; };
+		D664FB75C417700ABC9A494E46C74DC0 /* AlphaRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlphaRule.swift; path = SwiftValidator/Rules/AlphaRule.swift; sourceTree = "<group>"; };
+		D7E864421B421C9E348DD2DDD3D15711 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC84866E5BA8548D61F7A1AC95F8A15F /* CGRect+BentoRect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGRect+BentoRect.swift"; path = "BentoMap/Extensions/CGRect+BentoRect.swift"; sourceTree = "<group>"; };
+		DDE812330E7356AB9EF64D2D3FFF7F8F /* QuadrantWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuadrantWrapper.swift; path = BentoMap/QuadrantWrapper.swift; sourceTree = "<group>"; };
+		DE4B2E8A2BD1DFC6E311676A42451B25 /* FullNameRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FullNameRule.swift; path = SwiftValidator/Rules/FullNameRule.swift; sourceTree = "<group>"; };
+		DFED216851829C7136A01A5F21BD0AF7 /* ConfirmRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConfirmRule.swift; path = SwiftValidator/Rules/ConfirmRule.swift; sourceTree = "<group>"; };
+		E34AD87E5515ADE7067604B0FADF9BBF /* MaxLengthRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaxLengthRule.swift; path = SwiftValidator/Rules/MaxLengthRule.swift; sourceTree = "<group>"; };
+		E4485F8F0B2207E3B75921F3732C5AAD /* MKMapPoint+BentoCoordinate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MKMapPoint+BentoCoordinate.swift"; path = "BentoMap/Extensions/MKMapPoint+BentoCoordinate.swift"; sourceTree = "<group>"; };
+		E6154F699FE395FBD0CEF81344618C9E /* ValidationRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRule.swift; path = SwiftValidator/Rules/ValidationRule.swift; sourceTree = "<group>"; };
+		E8155DC15DCE93EC075538B9FEBE58FD /* SwiftValidator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftValidator-umbrella.h"; sourceTree = "<group>"; };
+		ECBAFB728863C225065B28B2B4E26F53 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE10E210622F7E76160361D51E830837 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE8C4FFEB84C91104642236380550B24 /* Pods-GoSafe-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GoSafe-acknowledgements.plist"; sourceTree = "<group>"; };
-		F1367404F3092904FA1B5B2AC66DF090 /* ZipCodeRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZipCodeRule.swift; path = SwiftValidator/Rules/ZipCodeRule.swift; sourceTree = "<group>"; };
+		F1C5C598D0F26466EF39A1D3D149A388 /* PasswordRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasswordRule.swift; path = SwiftValidator/Rules/PasswordRule.swift; sourceTree = "<group>"; };
+		F23BEEC43712F8A9E04EB226FE6DD652 /* CollectionTypeExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionTypeExtensions.swift; path = BentoMap/Extensions/CollectionTypeExtensions.swift; sourceTree = "<group>"; };
 		F5AEE3A6D78E6D6C3FB501845F3DDD68 /* Pods-GoSafe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoSafe.debug.xcconfig"; sourceTree = "<group>"; };
-		F5E95499B95524488813A94417268E9F /* Validator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validator.swift; path = SwiftValidator/Core/Validator.swift; sourceTree = "<group>"; };
-		F804A999A8214EC8582A8BE451CC7AA8 /* MinLengthRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinLengthRule.swift; path = SwiftValidator/Rules/MinLengthRule.swift; sourceTree = "<group>"; };
+		FECDD6262FDB090B80BBD23F8A3A5DB3 /* SwiftValidator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftValidator-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		08D6FE9AC46539C3D02BAEE32ADC0CC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A39E4D51B513654B08351B5734D8882 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9B41632130F0A053669B93E775E49F68 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -130,26 +189,94 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F6AD6BDCCB1F7C4D69D866922CA860E6 /* Frameworks */ = {
+		B729579CE8BFC013365F182A6D91C2BC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5F2CACD09332C711F181FA0E4426822 /* Foundation.framework in Frameworks */,
+				20E479AD2C7125624C991EADCE3993C2 /* Foundation.framework in Frameworks */,
+				0974A64AC75DF99A33C1AB1CE95B0DF7 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FE5472E65E8985336CC411583B5C20DB /* Frameworks */ = {
+		FDE671C3C455CC19ECC3A894572EE24A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E33DB9309B84FF33648B6D7B06135F9 /* Foundation.framework in Frameworks */,
-				2A899A5E89259B384F1093F48384D070 /* UIKit.framework in Frameworks */,
+				8212B6DCC88F6E3E0F8DCF65C7D25D61 /* Foundation.framework in Frameworks */,
+				B68E743856E12BBFF1418FD81F2BE27A /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BE45CE476CF09FB281D7D573F92949F /* SwiftValidator */ = {
+			isa = PBXGroup;
+			children = (
+				07A745ABE22AAA8A6F6794DD2D119BB0 /* AlphaNumericRule.swift */,
+				D664FB75C417700ABC9A494E46C74DC0 /* AlphaRule.swift */,
+				C2590D412A8C8D15A0B1C45C0ADCC45E /* CharacterSetRule.swift */,
+				DFED216851829C7136A01A5F21BD0AF7 /* ConfirmRule.swift */,
+				85BF0B88B555BDC4A53D74A66A8E8631 /* EmailRule.swift */,
+				753DE014BAA1D05EE35C2430C589DDEF /* ExactLengthRule.swift */,
+				5B6C3D120DCC40663E6BAA14ED82C361 /* FloatRule.swift */,
+				DE4B2E8A2BD1DFC6E311676A42451B25 /* FullNameRule.swift */,
+				959DA3618168874C8DE6AAEF5C5BFABC /* HexColorRule.swift */,
+				5700C14CEFBFADFA1CB5A3AF1992AE52 /* IPV4Rule.swift */,
+				898D7AE9D52C0B21D318B1355FC9CB0C /* ISBNRule.swift */,
+				E34AD87E5515ADE7067604B0FADF9BBF /* MaxLengthRule.swift */,
+				60B20489BFE24F21FC927971EEA6EAAD /* MinLengthRule.swift */,
+				F1C5C598D0F26466EF39A1D3D149A388 /* PasswordRule.swift */,
+				26335B283D006571D52B16932728E812 /* PhoneNumberRule.swift */,
+				B696FF98889086B999A558A03FF0E461 /* RegexRule.swift */,
+				0384663EE2C253D884695E61B6F6E83D /* RequiredRule.swift */,
+				1F5FC07411A1F34A91CCD308F7822DFC /* Rule.swift */,
+				7E39FBABB4EE0E9944A870D7CA99539C /* Validatable.swift */,
+				0AFA3E91939CE6E9B1F16B3DC5E3F206 /* ValidationDelegate.swift */,
+				31DCB329D97746F2B325731C1626A844 /* ValidationError.swift */,
+				E6154F699FE395FBD0CEF81344618C9E /* ValidationRule.swift */,
+				67655E44C21488F7F6DE1AD92ED7D2B7 /* Validator.swift */,
+				33F274A855A0510C665DC6F272A6871B /* ValidatorDictionary.swift */,
+				759075B7C43D6768D8F641887C07FEE2 /* ZipCodeRule.swift */,
+				444B4B482EF942C87284E407237C4189 /* Support Files */,
+			);
+			name = SwiftValidator;
+			path = SwiftValidator;
+			sourceTree = "<group>";
+		};
+		0CBA975FF5B883E80087FE31116054BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC8E4F9D6C7DAB325F25516F7FE30EA3 /* BentoMap */,
+				4E4A7739AD7B84F256D2AD10E3A029B4 /* FRDLivelyButton */,
+				725915B88CF14FD18D92AFF53E5ABC35 /* SwiftLint */,
+				0BE45CE476CF09FB281D7D573F92949F /* SwiftValidator */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				509C922CFB50FCD3DB8A08209AD57DDE /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2BD994C88CE7F12D34C7EE9F756314D7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				87282359EC480F635FB951A65C9CE1C5 /* FRDLivelyButton.modulemap */,
+				CD13249AA92C9A0C389394B8E5515325 /* FRDLivelyButton.xcconfig */,
+				C225FC29F0AA15FD657121D18E69EE77 /* FRDLivelyButton-dummy.m */,
+				CCA234A36F38B9B6418BEBA6CC9DDDEA /* FRDLivelyButton-prefix.pch */,
+				A4F708046A71AC9E6FB245B5A13F1582 /* FRDLivelyButton-umbrella.h */,
+				D7E864421B421C9E348DD2DDD3D15711 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FRDLivelyButton";
+			sourceTree = "<group>";
+		};
 		362F1C6730E61586F5D3F10A32A2FCB9 /* Pods-GoSafe */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,134 +303,119 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+		444B4B482EF942C87284E407237C4189 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E6EE98446B568159EE277B68FD442AF0 /* iOS */,
+				0DEB1F3D116F858BA004F5C11953610E /* Info.plist */,
+				C7A34819DCA40A62D6F49646227D3FA5 /* SwiftValidator.modulemap */,
+				0270B989E875A69FE0D60F6EEA4EA1D3 /* SwiftValidator.xcconfig */,
+				8B40EEE273C008957AA27D92525894B4 /* SwiftValidator-dummy.m */,
+				FECDD6262FDB090B80BBD23F8A3A5DB3 /* SwiftValidator-prefix.pch */,
+				E8155DC15DCE93EC075538B9FEBE58FD /* SwiftValidator-umbrella.h */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/SwiftValidator";
 			sourceTree = "<group>";
 		};
-		4B4E45559007CD03620F405F45C9110F /* FRDLivelyButton */ = {
+		4E4A7739AD7B84F256D2AD10E3A029B4 /* FRDLivelyButton */ = {
 			isa = PBXGroup;
 			children = (
-				8A7AA8A1DDD08573B2C9D29FE4016B2F /* FRDLivelyButton.h */,
-				391F0890775E3C16FDED9ECF9BF28543 /* FRDLivelyButton.m */,
-				D915103586EF785F8DE8976551858B95 /* Support Files */,
+				8E58BB15D2150C54B485102706C262CC /* FRDLivelyButton.h */,
+				A586DA80EDCF7236B210502055302772 /* FRDLivelyButton.m */,
+				2BD994C88CE7F12D34C7EE9F756314D7 /* Support Files */,
 			);
 			name = FRDLivelyButton;
 			path = FRDLivelyButton;
 			sourceTree = "<group>";
 		};
-		6191787EFFEBEF50D9ACE34342FD52D5 /* Pods */ = {
+		509C922CFB50FCD3DB8A08209AD57DDE /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				4B4E45559007CD03620F405F45C9110F /* FRDLivelyButton */,
-				77D30227F3617C335D647D5BD482B6A8 /* SwiftValidator */,
+				63AE25E005002286C8AD2A3AEB652EF0 /* Foundation.framework */,
+				A5A5BACAEB2D40A04637B26529345DA0 /* MapKit.framework */,
+				74F915CAD7A4DC99C94A7822844D8867 /* UIKit.framework */,
 			);
-			name = Pods;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		77D30227F3617C335D647D5BD482B6A8 /* SwiftValidator */ = {
+		725915B88CF14FD18D92AFF53E5ABC35 /* SwiftLint */ = {
 			isa = PBXGroup;
 			children = (
-				845F22A0D851E8EF9F5110648B81B94F /* AlphaNumericRule.swift */,
-				3B16F46E12F2665865CCC3CDBFAAC2B6 /* AlphaRule.swift */,
-				4F4DC302BADB88C4964CCD13B6EB4030 /* CharacterSetRule.swift */,
-				6FDF7251635DEFD5CFA854CAA81F2051 /* ConfirmRule.swift */,
-				16D9A5706A8A1E1FB54EEE6B2E1861CE /* EmailRule.swift */,
-				657F59C7470E55F20CA8357168E43FD0 /* ExactLengthRule.swift */,
-				7485EC410D0CAB33BB886B6F922F05CD /* FloatRule.swift */,
-				CA3B9B1563B38AA2A0508F45DC11CC4B /* FullNameRule.swift */,
-				9FF88442E7BE7B59B793D02303FF9448 /* HexColorRule.swift */,
-				D59DAEC44E33C67DE67C12B7F2598818 /* IPV4Rule.swift */,
-				AFB4FE899FA8B1B88F4E01ADFEEB0B51 /* ISBNRule.swift */,
-				6D05C50ABB546A37F44443BBC6EA1CE3 /* MaxLengthRule.swift */,
-				F804A999A8214EC8582A8BE451CC7AA8 /* MinLengthRule.swift */,
-				D94CB3FD1250F86E9E6F083A5D250935 /* PasswordRule.swift */,
-				9A67C31C44A917A424884647EC2EA88A /* PhoneNumberRule.swift */,
-				C697989417B9705F0758FD9EF51EEC80 /* RegexRule.swift */,
-				8254B55B116349C7F4798EE2B624FA46 /* RequiredRule.swift */,
-				A865743D0F85F15CC7C0F667788E0250 /* Rule.swift */,
-				0DC1DBC29DC9C176119D42D8D832378C /* Validatable.swift */,
-				2EAD413557A2E8702E602B7A07817FEE /* ValidationDelegate.swift */,
-				71E913EC81CE8317446CD21D82A85467 /* ValidationError.swift */,
-				CA0EC44B0AEF91B2E298106A2A108D32 /* ValidationRule.swift */,
-				F5E95499B95524488813A94417268E9F /* Validator.swift */,
-				2557454CE8473D9CCDAD2E8499D1E4A7 /* ValidatorDictionary.swift */,
-				F1367404F3092904FA1B5B2AC66DF090 /* ZipCodeRule.swift */,
-				C44C32C29358D5E835E3AF44A9F7E0BD /* Support Files */,
 			);
-			name = SwiftValidator;
-			path = SwiftValidator;
+			name = SwiftLint;
+			path = SwiftLint;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				6191787EFFEBEF50D9ACE34342FD52D5 /* Pods */,
-				F5D12875D9A98F42FDA21EC4DFE1624F /* Products */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				0CBA975FF5B883E80087FE31116054BF /* Pods */,
+				8DB62A0875C1DE7CCF7CA9EF2F803B33 /* Products */,
 				41B6E295487E3A3113BD4778E532CE8E /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		C44C32C29358D5E835E3AF44A9F7E0BD /* Support Files */ = {
+		8DB62A0875C1DE7CCF7CA9EF2F803B33 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AA2B16BE90C8E8ECEA36F6C811E3DA24 /* Info.plist */,
-				76459C21C246D2B030762293D6DAEAEE /* SwiftValidator.modulemap */,
-				CDE7AE6A626A31B267346B0E32818818 /* SwiftValidator.xcconfig */,
-				7AB25FB9752085845279F5BF7C4968CD /* SwiftValidator-dummy.m */,
-				A8763278DA1E463C8A3C26B5B6A2F7FB /* SwiftValidator-prefix.pch */,
-				5F89BE0ED8E5AB8F9A1A54A3EDA7FFE3 /* SwiftValidator-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftValidator";
-			sourceTree = "<group>";
-		};
-		D915103586EF785F8DE8976551858B95 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3F75661FD7F1A662968CA08E9661E7FA /* FRDLivelyButton.modulemap */,
-				DA4CACB314E171E89A224F20845E1391 /* FRDLivelyButton.xcconfig */,
-				1A466B66D41188D848C0BD2BFD39B1A2 /* FRDLivelyButton-dummy.m */,
-				0EB471772AE4E30EF7A7CFC7F2928454 /* FRDLivelyButton-prefix.pch */,
-				984A7C884B457F4733EF49C3336E8D34 /* FRDLivelyButton-umbrella.h */,
-				29F2FBB75E641B620DCAD4D9F98AE17F /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/FRDLivelyButton";
-			sourceTree = "<group>";
-		};
-		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */,
-				7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		F5D12875D9A98F42FDA21EC4DFE1624F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D90ED3FA506820D46C6EF33A49AE547D /* FRDLivelyButton.framework */,
-				DB766BE842E72DC7A3CB4146BE1830A0 /* Pods_GoSafe.framework */,
-				D620F91D3C1A1B96FEFB2FE5331BC801 /* SwiftValidator.framework */,
+				369FC05DB938D106CC36F4E2A086CDE1 /* BentoMap.framework */,
+				A54A1AE09D5431355EBA524529C0867E /* FRDLivelyButton.framework */,
+				18F2B82E222666F5BE5A40276F971A98 /* Pods_GoSafe.framework */,
+				2B958B9D32DF07E1819744C4B7D549E8 /* SwiftValidator.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		DC8E4F9D6C7DAB325F25516F7FE30EA3 /* BentoMap */ = {
+			isa = PBXGroup;
+			children = (
+				7377BF89DB2222C4FB1211AF9DD6108D /* BentoBox.swift */,
+				9EAB43A5E0CA577010C65DCFBDC3DD3B /* BentoMap.h */,
+				67222CEE26EA60BB15B44679BB78E7FD /* Box.swift */,
+				4D96A795BA1378164001FFA74B9B8E80 /* CGPoint+BentoCoordinate.swift */,
+				DC84866E5BA8548D61F7A1AC95F8A15F /* CGRect+BentoRect.swift */,
+				3E86741888F8C7A5B530B073402CE4D4 /* CLLocationCoordinate2D+BentoCoordinate.swift */,
+				F23BEEC43712F8A9E04EB226FE6DD652 /* CollectionTypeExtensions.swift */,
+				C41632EF80E94EB240E316D3509EEC55 /* Info.plist */,
+				E4485F8F0B2207E3B75921F3732C5AAD /* MKMapPoint+BentoCoordinate.swift */,
+				82D289776FF3D414F837E93EE6641FEA /* MKMapRect+BentoRect.swift */,
+				9DBE4AB3F0C510CE9029113F4014E33E /* OptionalOr.swift */,
+				21265AAE81D4BDBEE96F56D69392B10C /* OrdinalNodes.swift */,
+				DDE812330E7356AB9EF64D2D3FFF7F8F /* QuadrantWrapper.swift */,
+				6FDD234FA7E65E99C9F391464410D30C /* QuadTree.swift */,
+				3F963EC5D823AF06FC7351CA22635A74 /* QuadTreeNode.swift */,
+				1721BD0FE6B2906A1B3737B1ACC736E2 /* QuadTreeResult.swift */,
+				F54EEB434A9D5E70D5FBA69E5CE310FD /* Support Files */,
+			);
+			name = BentoMap;
+			path = BentoMap;
+			sourceTree = "<group>";
+		};
+		F54EEB434A9D5E70D5FBA69E5CE310FD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD9ED68120857523898F7AA0036C7ECF /* BentoMap.modulemap */,
+				A6394F23E5D1039122D405679CA242DF /* BentoMap.xcconfig */,
+				02DAF9654AAC3151069EAC08211F5BAC /* BentoMap-dummy.m */,
+				93CF340B066EB9BFD6BCF7214E16C506 /* BentoMap-prefix.pch */,
+				03436FC0BC2D933473F3E11AFB015666 /* BentoMap-umbrella.h */,
+				ECBAFB728863C225065B28B2B4E26F53 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BentoMap";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0049F00F08F0380FE17EF871F2D07B41 /* Headers */ = {
+		1ADE661D5E5A82BD5B485B69A6A4F330 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AD26FB3DCEC234AC5A3FF6E56359022 /* Pods-GoSafe-umbrella.h in Headers */,
+				A6D02EC89C63BAE201609A5793F849B4 /* BentoMap-umbrella.h in Headers */,
+				F0D31E286DC4C3026556595A07C7669A /* BentoMap.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,17 +428,59 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7EC59555574D8CDDDDF95C194A0DF8B2 /* Headers */ = {
+		4C84FD02D4A28E2A3DC57240A32A1C14 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CF13C7224618E5EF0AD31AEB982C855 /* SwiftValidator-umbrella.h in Headers */,
+				3DEEFFB16589CE48FC5B6EDD1B2111D2 /* SwiftValidator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62A3DD72B494499388EC3D6EA3118704 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				955478581CDBD0E930EA71AC8A35D08D /* Pods-GoSafe-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		2B8F36CC9ECFFBF66422313509C05938 /* SwiftValidator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 087AD08AB3C1A6A4FD517B008B81F795 /* Build configuration list for PBXNativeTarget "SwiftValidator" */;
+			buildPhases = (
+				A4A63CEFE7B47B95EA1C12F5FA99A518 /* Sources */,
+				FDE671C3C455CC19ECC3A894572EE24A /* Frameworks */,
+				4C84FD02D4A28E2A3DC57240A32A1C14 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftValidator;
+			productName = SwiftValidator;
+			productReference = 2B958B9D32DF07E1819744C4B7D549E8 /* SwiftValidator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		33F123B65170F5E1ACFC9BCC48A1E1A4 /* BentoMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 727FF0E7AB42E99235C4AC9C8BC14BA7 /* Build configuration list for PBXNativeTarget "BentoMap" */;
+			buildPhases = (
+				B4E8C65D034E5CC0053892CA26E43E2F /* Sources */,
+				B729579CE8BFC013365F182A6D91C2BC /* Frameworks */,
+				1ADE661D5E5A82BD5B485B69A6A4F330 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BentoMap;
+			productName = BentoMap;
+			productReference = 369FC05DB938D106CC36F4E2A086CDE1 /* BentoMap.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		39818768AC5A30A791C4DDDEC11C0CB6 /* FRDLivelyButton */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BABBDDDAECF9B0F98BD1A0447E3763C3 /* Build configuration list for PBXNativeTarget "FRDLivelyButton" */;
@@ -341,43 +495,27 @@
 			);
 			name = FRDLivelyButton;
 			productName = FRDLivelyButton;
-			productReference = D90ED3FA506820D46C6EF33A49AE547D /* FRDLivelyButton.framework */;
+			productReference = A54A1AE09D5431355EBA524529C0867E /* FRDLivelyButton.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		476C789EF4B6EDD1495457ABB9A7CFA1 /* Pods-GoSafe */ = {
+		68D198D3D7060AB2C3D811056C9A6790 /* Pods-GoSafe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C4F1E80AABB71A3E08BBE7E89231435F /* Build configuration list for PBXNativeTarget "Pods-GoSafe" */;
+			buildConfigurationList = C7C169E259FBC77955CC007DF26C01D6 /* Build configuration list for PBXNativeTarget "Pods-GoSafe" */;
 			buildPhases = (
-				8355D49F12902B41BC9EECF1EEC07FA1 /* Sources */,
-				F6AD6BDCCB1F7C4D69D866922CA860E6 /* Frameworks */,
-				0049F00F08F0380FE17EF871F2D07B41 /* Headers */,
+				20629C11670008737BEF70BB83E39FD2 /* Sources */,
+				08D6FE9AC46539C3D02BAEE32ADC0CC6 /* Frameworks */,
+				62A3DD72B494499388EC3D6EA3118704 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CA93C1BA9F38846F5B93A485CD09E27E /* PBXTargetDependency */,
-				989861E32C1948137AC83FA01A1C4454 /* PBXTargetDependency */,
+				CC88DC3CEDB1D2FB62AC93119831C811 /* PBXTargetDependency */,
+				BCBEAD60303405523A9F61A3A2B343BB /* PBXTargetDependency */,
+				030A68CF9AB677A82FD8F2D4DF486057 /* PBXTargetDependency */,
 			);
 			name = "Pods-GoSafe";
 			productName = "Pods-GoSafe";
-			productReference = DB766BE842E72DC7A3CB4146BE1830A0 /* Pods_GoSafe.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		AC4ACF940A5C3572807F76C03B43E5EC /* SwiftValidator */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FE81BB8E104119DBA641AFCDA31FC230 /* Build configuration list for PBXNativeTarget "SwiftValidator" */;
-			buildPhases = (
-				AE7D083C109923D99EB81F10D4E6D8EB /* Sources */,
-				FE5472E65E8985336CC411583B5C20DB /* Frameworks */,
-				7EC59555574D8CDDDDF95C194A0DF8B2 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SwiftValidator;
-			productName = SwiftValidator;
-			productReference = D620F91D3C1A1B96FEFB2FE5331BC801 /* SwiftValidator.framework */;
+			productReference = 18F2B82E222666F5BE5A40276F971A98 /* Pods_GoSafe.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -397,56 +535,57 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = F5D12875D9A98F42FDA21EC4DFE1624F /* Products */;
+			productRefGroup = 8DB62A0875C1DE7CCF7CA9EF2F803B33 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				33F123B65170F5E1ACFC9BCC48A1E1A4 /* BentoMap */,
 				39818768AC5A30A791C4DDDEC11C0CB6 /* FRDLivelyButton */,
-				476C789EF4B6EDD1495457ABB9A7CFA1 /* Pods-GoSafe */,
-				AC4ACF940A5C3572807F76C03B43E5EC /* SwiftValidator */,
+				68D198D3D7060AB2C3D811056C9A6790 /* Pods-GoSafe */,
+				2B8F36CC9ECFFBF66422313509C05938 /* SwiftValidator */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8355D49F12902B41BC9EECF1EEC07FA1 /* Sources */ = {
+		20629C11670008737BEF70BB83E39FD2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FAE4C5FD156BF4821492A07A6402046 /* Pods-GoSafe-dummy.m in Sources */,
+				E8AE78534D5A644F1E6A734515C0C504 /* Pods-GoSafe-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AE7D083C109923D99EB81F10D4E6D8EB /* Sources */ = {
+		A4A63CEFE7B47B95EA1C12F5FA99A518 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FC36A0ED277F699F735C710513D1625 /* AlphaNumericRule.swift in Sources */,
-				158C123D2E748DBB1B6E9AAB8CC61CCE /* AlphaRule.swift in Sources */,
-				7F5D60EF2CB1E481FA4AE444C19F6DD8 /* CharacterSetRule.swift in Sources */,
-				384AF08D84B3F10669D167E90C999335 /* ConfirmRule.swift in Sources */,
-				E2114E9629F760D789DD9F6FC9D26F3D /* EmailRule.swift in Sources */,
-				E68A5D1FF5198445AFEED120ADA2CDF0 /* ExactLengthRule.swift in Sources */,
-				4416A3E417C457DD0EDF7F7ABE09B1FC /* FloatRule.swift in Sources */,
-				3CC2A8AAB383D2F0F6EDA906A72D2C5E /* FullNameRule.swift in Sources */,
-				4C0F07DC60CD5D41EAFCB16D1374C235 /* HexColorRule.swift in Sources */,
-				2D6250C44ECEB73C3D95AD7BDB3C2640 /* IPV4Rule.swift in Sources */,
-				CE5A18E6F9B6BE082DBA1506674377F5 /* ISBNRule.swift in Sources */,
-				23909922D6C2728A8BF30949EA70C5F5 /* MaxLengthRule.swift in Sources */,
-				BB2E0AAE2A16A52C43F073712FDC6314 /* MinLengthRule.swift in Sources */,
-				0F608C85DB3D209E8B05C80D569F8701 /* PasswordRule.swift in Sources */,
-				EB8ACC0F71E7EB1ABD0D1CCAF84E5341 /* PhoneNumberRule.swift in Sources */,
-				FEA78419CB4B39C6E6F8E7E49059ED54 /* RegexRule.swift in Sources */,
-				98E05105602FEC4788B3D10F405183AE /* RequiredRule.swift in Sources */,
-				1080B368E95B7C7415BA874F1C5C874D /* Rule.swift in Sources */,
-				8F43A3403B60AF22B605137611557425 /* SwiftValidator-dummy.m in Sources */,
-				6B84CAF12F6D6F7E944344BC8FDD6587 /* Validatable.swift in Sources */,
-				E5B2AD29A711305F2F518137DA46009D /* ValidationDelegate.swift in Sources */,
-				1BDACF95E6B0D4C4FF0D4B98A8D5C924 /* ValidationError.swift in Sources */,
-				71E1943CB2093915832EDB8679BB68A1 /* ValidationRule.swift in Sources */,
-				2D19673B2EC93C69B42004360B890FF0 /* Validator.swift in Sources */,
-				F0DF244B8346DA3A46E1AAE984644DB5 /* ValidatorDictionary.swift in Sources */,
-				3B49A1C1E93D7B0E02A997297FA5751D /* ZipCodeRule.swift in Sources */,
+				0C96BCEDDF326142F5AA0DC95C8D2A2A /* AlphaNumericRule.swift in Sources */,
+				0949FEBAB1786A281DC6EF7F33FE266F /* AlphaRule.swift in Sources */,
+				FCFFC394AEC76B4E6C69A7E521990573 /* CharacterSetRule.swift in Sources */,
+				47F4090FD2ECDAC265C7F6510BDC46AF /* ConfirmRule.swift in Sources */,
+				3AF588953B99E2E6122A4F02CAC35899 /* EmailRule.swift in Sources */,
+				BC097863E4A3C43FE8B2AC1CA88FADCC /* ExactLengthRule.swift in Sources */,
+				F276AFE381E07662EA7511A18D19B56F /* FloatRule.swift in Sources */,
+				E97EF8EFB04897641DAC893176B4B675 /* FullNameRule.swift in Sources */,
+				456D3306BC8B35A058D30F27BD015D8D /* HexColorRule.swift in Sources */,
+				19E07A6DB89B7634825B1BF9EF7D277C /* IPV4Rule.swift in Sources */,
+				E8F31249094E0B524B3A141E9F601150 /* ISBNRule.swift in Sources */,
+				AD48F80284A2078CE796B20D12B8F631 /* MaxLengthRule.swift in Sources */,
+				95C109C90B013A27FD788C0F9C2665C7 /* MinLengthRule.swift in Sources */,
+				4AA1CD44ED06F225CD5069B64893B6B8 /* PasswordRule.swift in Sources */,
+				08186496FF80CB59F05A351BF70BD485 /* PhoneNumberRule.swift in Sources */,
+				C56D3CEB0FC629008D58DE34DA2B3453 /* RegexRule.swift in Sources */,
+				408C5BC5EE239887E25956C6F8A63686 /* RequiredRule.swift in Sources */,
+				D48B7940C4C6FE8EE365987D3FC4D919 /* Rule.swift in Sources */,
+				AB902CC97243D9BEE4D41C6089426AA5 /* SwiftValidator-dummy.m in Sources */,
+				1A4464E92B472CE0818AADE474020FC7 /* Validatable.swift in Sources */,
+				2B480D0B9B67F33A15084D0001230EC4 /* ValidationDelegate.swift in Sources */,
+				6F947A9ABC4B9E3AC0B6CA664F7A2C51 /* ValidationError.swift in Sources */,
+				8550C79F7F8E41527C5E976E8FCBFDE1 /* ValidationRule.swift in Sources */,
+				F574387717D81A7DB81C6C5FB60377DB /* Validator.swift in Sources */,
+				7950453313A75430001824621ED119E0 /* ValidatorDictionary.swift in Sources */,
+				8C208AE8F0AE55BDD3BCD560AE81288E /* ZipCodeRule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,27 +598,56 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B4E8C65D034E5CC0053892CA26E43E2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98A781784AE78E69B583BD18EF122747 /* BentoBox.swift in Sources */,
+				F8AE70490E57BA9D804EEE960C68C67F /* BentoMap-dummy.m in Sources */,
+				D4C4BFA7852531076FECEF6B99D6A0C2 /* Box.swift in Sources */,
+				D583175962E4359156096CB113960CE6 /* CGPoint+BentoCoordinate.swift in Sources */,
+				FA663C6B114F41AD92449DF30C55B697 /* CGRect+BentoRect.swift in Sources */,
+				D0DE1478C79553BAD19BD3398985DB3B /* CLLocationCoordinate2D+BentoCoordinate.swift in Sources */,
+				A1ACA306F9B1AFE33ADA056F6F4F489E /* CollectionTypeExtensions.swift in Sources */,
+				9517C6620B1F3C6A299327C7E2559E1C /* Info.plist in Sources */,
+				5AEE481F87F598AB3923C95EF31EC84E /* MKMapPoint+BentoCoordinate.swift in Sources */,
+				0EFF90D4761617DCC0B2771688E899A0 /* MKMapRect+BentoRect.swift in Sources */,
+				6569179AC30403734E1578CB2468DF56 /* OptionalOr.swift in Sources */,
+				43DD31D3A314812EF1DB24999159F804 /* OrdinalNodes.swift in Sources */,
+				B3A30F21C26779DBEB6DB11AA4689D30 /* QuadrantWrapper.swift in Sources */,
+				65F00D0C7E235A7D2442EEED46E4B336 /* QuadTree.swift in Sources */,
+				D51559BAF1762B504DA7B5B763B1A09E /* QuadTreeNode.swift in Sources */,
+				EC9052228FC71FB71CAE1429A053C173 /* QuadTreeResult.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		989861E32C1948137AC83FA01A1C4454 /* PBXTargetDependency */ = {
+		030A68CF9AB677A82FD8F2D4DF486057 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftValidator;
-			target = AC4ACF940A5C3572807F76C03B43E5EC /* SwiftValidator */;
-			targetProxy = A32B73D4F8CD8D890A52606EA1C8CAC7 /* PBXContainerItemProxy */;
+			target = 2B8F36CC9ECFFBF66422313509C05938 /* SwiftValidator */;
+			targetProxy = 308938C47BB1976E02CDC738B03D1AD0 /* PBXContainerItemProxy */;
 		};
-		CA93C1BA9F38846F5B93A485CD09E27E /* PBXTargetDependency */ = {
+		BCBEAD60303405523A9F61A3A2B343BB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FRDLivelyButton;
 			target = 39818768AC5A30A791C4DDDEC11C0CB6 /* FRDLivelyButton */;
-			targetProxy = 6A94D46C6759AE696DC1BE3ECAB0F240 /* PBXContainerItemProxy */;
+			targetProxy = 4EEBB9622D284A32594C2DC7F4D05F46 /* PBXContainerItemProxy */;
+		};
+		CC88DC3CEDB1D2FB62AC93119831C811 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BentoMap;
+			target = 33F123B65170F5E1ACFC9BCC48A1E1A4 /* BentoMap */;
+			targetProxy = 02F9E5293E577E6B466763228C71ACFE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		03C3E5161213A64BDD88CD10DB2AC0E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA4CACB314E171E89A224F20845E1391 /* FRDLivelyButton.xcconfig */;
+			baseConfigurationReference = CD13249AA92C9A0C389394B8E5515325 /* FRDLivelyButton.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -509,215 +677,7 @@
 			};
 			name = Debug;
 		};
-		156284431C64CB05C59BDA0595A1E95A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		26AA1F16590033E434F3D8D9D7F6D81D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA4CACB314E171E89A224F20845E1391 /* FRDLivelyButton.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FRDLivelyButton/FRDLivelyButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FRDLivelyButton/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FRDLivelyButton/FRDLivelyButton.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = FRDLivelyButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		29D20926BD6D14042FB30872D7B98030 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5AEE3A6D78E6D6C3FB501845F3DDD68 /* Pods-GoSafe.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-GoSafe/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GoSafe/Pods-GoSafe.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_GoSafe;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		2E7C62EF8733DB100F7C2F018A916528 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96717CD4BB938A3577769111C648E371 /* Pods-GoSafe.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-GoSafe/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GoSafe/Pods-GoSafe.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_GoSafe;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		453F82C0FF9A8FCB1334BF857E37C4E1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDE7AE6A626A31B267346B0E32818818 /* SwiftValidator.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftValidator/SwiftValidator-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftValidator/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftValidator/SwiftValidator.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftValidator;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4907FA44D790F28B7D62D30AF375237B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDE7AE6A626A31B267346B0E32818818 /* SwiftValidator.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftValidator/SwiftValidator-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftValidator/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftValidator/SwiftValidator.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftValidator;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C382132BB6BF8CA1A911872A2062FD0D /* Debug */ = {
+		12914D756594D15C6F2CA12FE5F89F1B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -753,7 +713,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -761,14 +721,305 @@
 			};
 			name = Debug;
 		};
+		26AA1F16590033E434F3D8D9D7F6D81D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD13249AA92C9A0C389394B8E5515325 /* FRDLivelyButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FRDLivelyButton/FRDLivelyButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FRDLivelyButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FRDLivelyButton/FRDLivelyButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FRDLivelyButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2703F44C48FA3F38779E73EDE4C034A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6394F23E5D1039122D405679CA242DF /* BentoMap.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BentoMap/BentoMap-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BentoMap/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BentoMap/BentoMap.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BentoMap;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		531F0893F853BD03031534A4FFBD71D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0270B989E875A69FE0D60F6EEA4EA1D3 /* SwiftValidator.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftValidator/SwiftValidator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftValidator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftValidator/SwiftValidator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftValidator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		825063D7AF09CE849F3F7B14A8C525CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96717CD4BB938A3577769111C648E371 /* Pods-GoSafe.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GoSafe/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GoSafe/Pods-GoSafe.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GoSafe;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		994C462D957542122C34292380C8C835 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5AEE3A6D78E6D6C3FB501845F3DDD68 /* Pods-GoSafe.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GoSafe/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GoSafe/Pods-GoSafe.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GoSafe;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A0BCD9ABF5C78543CB23A99B5A164A69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0270B989E875A69FE0D60F6EEA4EA1D3 /* SwiftValidator.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftValidator/SwiftValidator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftValidator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftValidator/SwiftValidator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftValidator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A283D56D9C6C8D78B3783D344757B61E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6394F23E5D1039122D405679CA242DF /* BentoMap.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BentoMap/BentoMap-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BentoMap/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BentoMap/BentoMap.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BentoMap;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		087AD08AB3C1A6A4FD517B008B81F795 /* Build configuration list for PBXNativeTarget "SwiftValidator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0BCD9ABF5C78543CB23A99B5A164A69 /* Debug */,
+				531F0893F853BD03031534A4FFBD71D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C382132BB6BF8CA1A911872A2062FD0D /* Debug */,
-				156284431C64CB05C59BDA0595A1E95A /* Release */,
+				12914D756594D15C6F2CA12FE5F89F1B /* Debug */,
+				E72E7977875C2D251FC62736BBDDC389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		727FF0E7AB42E99235C4AC9C8BC14BA7 /* Build configuration list for PBXNativeTarget "BentoMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A283D56D9C6C8D78B3783D344757B61E /* Debug */,
+				2703F44C48FA3F38779E73EDE4C034A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -782,20 +1033,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C4F1E80AABB71A3E08BBE7E89231435F /* Build configuration list for PBXNativeTarget "Pods-GoSafe" */ = {
+		C7C169E259FBC77955CC007DF26C01D6 /* Build configuration list for PBXNativeTarget "Pods-GoSafe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				29D20926BD6D14042FB30872D7B98030 /* Debug */,
-				2E7C62EF8733DB100F7C2F018A916528 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FE81BB8E104119DBA641AFCDA31FC230 /* Build configuration list for PBXNativeTarget "SwiftValidator" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				453F82C0FF9A8FCB1334BF857E37C4E1 /* Debug */,
-				4907FA44D790F28B7D62D30AF375237B /* Release */,
+				994C462D957542122C34292380C8C835 /* Debug */,
+				825063D7AF09CE849F3F7B14A8C525CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

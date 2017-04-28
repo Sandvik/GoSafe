@@ -82,7 +82,8 @@ class DPMenuButton: UIButton {
     }
   }
   
-  @IBInspectable var strokeColor : UIColor = UIColor(red:0.94, green:0.94, blue:0.96, alpha:1.0) {
+  @IBInspectable var strokeColor : UIColor = UIColor.black//UIColor(red:0.94, green:0.94, blue:0.96, alpha:1.0) 
+    {
     didSet {
       self.updateSubLayers()
     }

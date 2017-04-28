@@ -41,6 +41,9 @@
 		0B176AC61E9F6F8B00A32F56 /* RegistrationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B176AC21E9F6F8B00A32F56 /* RegistrationPresenter.swift */; };
 		0B176AC91E9F6FD800A32F56 /* AddRegistrationControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B176AC81E9F6FD800A32F56 /* AddRegistrationControllerViewController.swift */; };
 		0B176ACE1E9F70C200A32F56 /* RegistrationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B176ACD1E9F70C200A32F56 /* RegistrationService.swift */; };
+		0B22BE871EB32EFB00948001 /* QuadTree+SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B22BE861EB32EFB00948001 /* QuadTree+SampleData.swift */; };
+		0B22BE8A1EB337EB00948001 /* Annotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B22BE881EB337EB00948001 /* Annotations.swift */; };
+		0B22BE8B1EB337EB00948001 /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B22BE891EB337EB00948001 /* AnnotationView.swift */; };
 		0B2E97E71EAF47AC000B6ABA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2E97E61EAF47AC000B6ABA /* MapViewController.swift */; };
 		0B2E97E91EAF48D4000B6ABA /* MKMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2E97E81EAF48D4000B6ABA /* MKMapView.swift */; };
 		0B2E97EB1EAF4A00000B6ABA /* myGpx.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 0B2E97EA1EAF4A00000B6ABA /* myGpx.gpx */; };
@@ -130,6 +133,9 @@
 		0B176AC21E9F6F8B00A32F56 /* RegistrationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegistrationPresenter.swift; path = Business/RegistrationPresenter.swift; sourceTree = "<group>"; };
 		0B176AC81E9F6FD800A32F56 /* AddRegistrationControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddRegistrationControllerViewController.swift; path = Business/AddRegistrationControllerViewController.swift; sourceTree = "<group>"; };
 		0B176ACD1E9F70C200A32F56 /* RegistrationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegistrationService.swift; path = Connection/RegistrationService.swift; sourceTree = "<group>"; };
+		0B22BE861EB32EFB00948001 /* QuadTree+SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "QuadTree+SampleData.swift"; sourceTree = "<group>"; };
+		0B22BE881EB337EB00948001 /* Annotations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Annotations.swift; sourceTree = "<group>"; };
+		0B22BE891EB337EB00948001 /* AnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
 		0B2E97E61EAF47AC000B6ABA /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = Business/MapViewController.swift; sourceTree = "<group>"; };
 		0B2E97E81EAF48D4000B6ABA /* MKMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKMapView.swift; path = Extension/MKMapView.swift; sourceTree = "<group>"; };
 		0B2E97EA1EAF4A00000B6ABA /* myGpx.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = myGpx.gpx; path = Ressources/myGpx.gpx; sourceTree = "<group>"; };
@@ -285,6 +291,7 @@
 		0B176ABB1E9F6EAE00A32F56 /* Ressourses */ = {
 			isa = PBXGroup;
 			children = (
+				0B22BE861EB32EFB00948001 /* QuadTree+SampleData.swift */,
 				0B176AB91E9F6EA700A32F56 /* lineGray.png */,
 				0B2E97EA1EAF4A00000B6ABA /* myGpx.gpx */,
 			);
@@ -324,6 +331,8 @@
 		0B176ACB1E9F6FF500A32F56 /* Registration */ = {
 			isa = PBXGroup;
 			children = (
+				0B22BE881EB337EB00948001 /* Annotations.swift */,
+				0B22BE891EB337EB00948001 /* AnnotationView.swift */,
 				0B2E97E61EAF47AC000B6ABA /* MapViewController.swift */,
 				0B176ABF1E9F6F8B00A32F56 /* RegistrationViewController.swift */,
 				0B176AC21E9F6F8B00A32F56 /* RegistrationPresenter.swift */,
@@ -646,6 +655,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B22BE871EB32EFB00948001 /* QuadTree+SampleData.swift in Sources */,
 				0B176ACE1E9F70C200A32F56 /* RegistrationService.swift in Sources */,
 				0B16FD4F1EA8A5E5004BCB82 /* RegistrationViewData.swift in Sources */,
 				0B176AC31E9F6F8B00A32F56 /* RegistrationViewController.swift in Sources */,
@@ -657,6 +667,7 @@
 				0BE254B41EA63EBD003DFA97 /* InvoicesViewController.swift in Sources */,
 				0B16FD4E1EA8A5E5004BCB82 /* InvoiceViewData.swift in Sources */,
 				0B16FD491EA8A350004BCB82 /* InvoicePresenter.swift in Sources */,
+				0B22BE8B1EB337EB00948001 /* AnnotationView.swift in Sources */,
 				0B176ABD1E9F6F0500A32F56 /* Registration.swift in Sources */,
 				0B16FD451EA89D50004BCB82 /* InvoiceDetailCell.swift in Sources */,
 				0B176AC41E9F6F8B00A32F56 /* RegistrationCell.swift in Sources */,
@@ -665,6 +676,7 @@
 				0B168EC81E995CFC0063E523 /* AppDelegate.swift in Sources */,
 				0B15165A1EA74C9F008D0395 /* AddRegistrationPresenter.swift in Sources */,
 				0B176AC91E9F6FD800A32F56 /* AddRegistrationControllerViewController.swift in Sources */,
+				0B22BE8A1EB337EB00948001 /* Annotations.swift in Sources */,
 				0B2E97E91EAF48D4000B6ABA /* MKMapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
