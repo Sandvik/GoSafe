@@ -3,7 +3,10 @@ platform :ios, '10.0'
 target 'GoSafe' do
   use_frameworks!
 
-  # Pods for Economic
+  # Pods for GoSafe
+  pod 'Alamofire', '~> 4.2'
+  pod 'pop', '~> 1.0'
+  pod 'ExpandingMenu', '~> 0.3'
   pod 'SwiftLint'
   pod 'BentoMap'
   pod 'FRDLivelyButton', '~> 1.1.3'

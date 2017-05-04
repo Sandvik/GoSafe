@@ -1,12 +1,18 @@
 PODS:
+  - Alamofire (4.4.0)
   - BentoMap (0.3.3)
+  - ExpandingMenu (0.3.1)
   - FRDLivelyButton (1.1.3)
+  - pop (1.0.9)
   - SwiftLint (0.18.1)
   - SwiftValidator (4.0.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.2)
   - BentoMap
+  - ExpandingMenu (~> 0.3)
   - FRDLivelyButton (~> 1.1.3)
+  - pop (~> 1.0)
   - SwiftLint
   - SwiftValidator (from `https://github.com/jpotts18/SwiftValidator.git`, branch `master`)
 
@@ -21,11 +27,14 @@ CHECKOUT OPTIONS:
     :git: https://github.com/jpotts18/SwiftValidator.git
 
 SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   BentoMap: fcb7da28e43a8d7d51950ddd2a45f6a1d61f6738
+  ExpandingMenu: 107548f3cb8c04b28a8b6b436983f506849484cc
   FRDLivelyButton: d67f7ecb801ac84427fca1ea832a63e972b72478
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   SwiftLint: b467d08f5b25dc3b3cfed243d8e1b74b91714c67
   SwiftValidator: 25ded5ca1f10c05adf57f6ac82a72d28ac8d91af
 
-PODFILE CHECKSUM: 726a9b63b86a60f3f2bd0494344e9afbc4725034
+PODFILE CHECKSUM: b32dfdb6c039d129a52f1487b988aacebd8dee15
 
 COCOAPODS: 1.2.0

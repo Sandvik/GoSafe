@@ -1,13 +1,12 @@
 //
 //  MainViewController.swift
-//  Economic
+//  GoSafe
 //
-//  Created by Thomas H. Sandvik on 11/04/2017.
+//  Created by Thomas H. Sandvik
 //  Copyright © 2017 Thomas H. Sandvik. All rights reserved.
 //
 
 import UIKit
-import MenuKit
 
 /*
  Using an external Framework to create a menu: https://github.com/HongliYu/DPSlideMenuKit-Swift
@@ -51,7 +50,7 @@ class MainViewController: UIViewController {
             color: UIColor(red:0.94, green:0.94, blue:0.96, alpha:1.0)
             ,
             controllerClassName: "InvoicesViewController",
-            title: NSLocalizedString("Fakturaer", comment: ""),
+            title: NSLocalizedString("osv, osv", comment: ""),
             cellHeight: 50,
             actionBlock: nil)
         

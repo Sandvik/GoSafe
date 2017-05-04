@@ -1,11 +1,3 @@
-//
-//  AnnotationView.swift
-//  BentoMap
-//
-//  Created by Michael Skiba on 1/10/17.
-//  Copyright © 2017 Raizlabs. All rights reserved.
-//
-
 import UIKit
 import MapKit
 

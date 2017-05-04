@@ -89,14 +89,20 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
   install_framework "$BUILT_PRODUCTS_DIR/BentoMap/BentoMap.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ExpandingMenu/ExpandingMenu.framework"
   install_framework "$BUILT_PRODUCTS_DIR/FRDLivelyButton/FRDLivelyButton.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SwiftValidator/SwiftValidator.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/pop/pop.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
   install_framework "$BUILT_PRODUCTS_DIR/BentoMap/BentoMap.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ExpandingMenu/ExpandingMenu.framework"
   install_framework "$BUILT_PRODUCTS_DIR/FRDLivelyButton/FRDLivelyButton.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SwiftValidator/SwiftValidator.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/pop/pop.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

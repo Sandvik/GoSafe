@@ -1,14 +1,13 @@
 //
 //  RegistrationViewController.swift
-//  Economic
+//  GoSafe
 //
-//  Created by Thomas H. Sandvik on 12/04/2017.
+//  Created by Thomas H. Sandvik
 //  Copyright © 2017 Thomas H. Sandvik. All rights reserved.
 //
 
 import UIKit
 import FRDLivelyButton
-import MenuKit
 
 class RegistrationViewController: DPContentViewController {
     
@@ -18,7 +17,7 @@ class RegistrationViewController: DPContentViewController {
     
     @IBOutlet weak var headlineLabel: UILabel!
     
-    fileprivate let registrationPresenter = RegistrationPresenter(registrationService: RegistrationService())
+    fileprivate let registrationPresenter = RegistrationPresenter(DataLoadService: DataLoadService())
     
     fileprivate var registrationsToDisplay = [RegistrationViewData]()// Data to display
     

@@ -1,36 +1,37 @@
 //
 //  RegistrationViewController.swift
-//  Economic
+//  GoSafe
 //
-//  Created by Thomas H. Sandvik on 12/04/2017.
+//  Created by Thomas H. Sandvik
 //  Copyright © 2017 Thomas H. Sandvik. All rights reserved.
 //
 
 import UIKit
-import FRDLivelyButton
-import MenuKit
 import MapKit
 import BentoMap
+import ExpandingMenu
 
 class MapViewController: DPContentViewController {
     @IBOutlet var mapView: MKMapView!
-    var locationManager:CLLocationManager!
-    
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView?
-    
     @IBOutlet weak var headlineLabel: UILabel!
+    @IBOutlet weak var anmeldButton: UIButton!
+    @IBOutlet weak var anmeldImage: UIImageView!
     
-    fileprivate let registrationPresenter = RegistrationPresenter(registrationService: RegistrationService())
+    fileprivate let registrationPresenter = RegistrationPresenter(DataLoadService: DataLoadService())
     
     fileprivate var registrationsToDisplay = [RegistrationViewData]()// Data to display
     
     static let cellSize: CGFloat = 64
     // Used to make sure the map is nicely padded on the edges, and visible annotations
     // aren't hidden under the navigation bar
+    
     static let mapInsets =  UIEdgeInsets(top: cellSize, left: (cellSize / 2), bottom: (cellSize / 2), right: (cellSize / 2))
     
     let mapData = QuadTree<Int, MKMapRect, CLLocationCoordinate2D>.sampleData
-    
+   
+    var locationManager:CLLocationManager!
+    var useFakeData:Bool!
     
     
     override func viewDidLoad() {
@@ -60,29 +61,72 @@ class MapViewController: DPContentViewController {
         /** View setup */
         self.setUpView()
         
+        //Test or not
+        self.useFakeData = false
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        let zoomRect = mapView.mapRectThatFits(mapData.bentoBox.root, edgePadding: type(of: self).mapInsets)
-        mapView.setVisibleMapRect(zoomRect,
-                                  edgePadding: type(of: self).mapInsets,
-                                  animated: false)
+        
+        if self.useFakeData{
+            let zoomRect = mapView.mapRectThatFits(mapData.bentoBox.root, edgePadding: type(of: self).mapInsets)
+            mapView.setVisibleMapRect(zoomRect,
+                                      edgePadding: type(of: self).mapInsets,
+                                      animated: false)
+        }
+        
     }
     
     private func setUpView(){
-        /** Add plus button */
+        self.configureExpandingMenuButton()
+        self.headlineLabel.text = NSLocalizedString("RegistreringOverskrift", comment: "")
+    }
+    
+    fileprivate func configureExpandingMenuButton() {
         let X_Co: CGFloat = UIScreen.main.bounds.size.width / 2
         let Y_Co: CGFloat = UIScreen.main.bounds.size.height - 50
-        let button = FRDLivelyButton(frame: CGRect(x: CGFloat(0), y: CGFloat(), width: CGFloat(50), height: CGFloat(50)))
-        button.setStyle(kFRDLivelyButtonStyleCirclePlus, animated: false)
-        button.addTarget(self, action: #selector(self.openRegistrationAction), for: .touchUpInside)
-        button.center = CGPoint(x: X_Co, y: Y_Co)
         
-        self.view.addSubview(button)
+        let menuButtonSize: CGSize = CGSize(width: 64.0, height: 64.0)
+        let menuButton = ExpandingMenuButton(frame: CGRect(origin: CGPoint.zero, size: menuButtonSize), centerImage: UIImage(named: "chooser-button-tab")!, centerHighlightedImage: UIImage(named: "chooser-button-tab-highlighted")!)
+     
+        menuButton.center = CGPoint(x: self.view.bounds.width - 30.0, y: self.view.bounds.height - 50.0)
+        self.view.addSubview(menuButton)
         
-        self.headlineLabel.text = NSLocalizedString("RegistreringOverskrift", comment: "")
+        func showAnmeld(item: String) {
+            self.anmeldButton.fadeIn(duration: animationSpeed, value: 1.0)
+            self.anmeldImage.fadeIn(duration: animationSpeed, value: 1.0)
+        }
         
+        let item1 = ExpandingMenuItem(size: menuButtonSize, title: "Gruppe af mennesker", image: UIImage(named: "chooser-moment-icon-music")!, highlightedImage: UIImage(named: "chooser-moment-icon-place-highlighted")!, backgroundImage: UIImage(named: "chooser-moment-button"), backgroundHighlightedImage: UIImage(named: "chooser-moment-button-highlighted")) { () -> Void in
+            showAnmeld(item: "Music")
+        }
+        
+        let item2 = ExpandingMenuItem(size: menuButtonSize, title: "Enkeltperson", image: UIImage(named: "chooser-moment-icon-place")!, highlightedImage: UIImage(named: "chooser-moment-icon-place-highlighted")!, backgroundImage: UIImage(named: "chooser-moment-button"), backgroundHighlightedImage: UIImage(named: "chooser-moment-button-highlighted")) { () -> Void in
+            showAnmeld(item: "Place")
+        }
+        
+        let item3 = ExpandingMenuItem(size: menuButtonSize, title: "Det er øde", image: UIImage(named: "chooser-moment-icon-camera")!, highlightedImage: UIImage(named: "chooser-moment-icon-camera-highlighted")!, backgroundImage: UIImage(named: "chooser-moment-button"), backgroundHighlightedImage: UIImage(named: "chooser-moment-button-highlighted")) { () -> Void in
+            showAnmeld(item: "Camera")
+        }
+        
+        let item4 = ExpandingMenuItem(size: menuButtonSize, title: "Der er mørkt", image: UIImage(named: "chooser-moment-icon-thought")!, highlightedImage: UIImage(named: "chooser-moment-icon-thought-highlighted")!, backgroundImage: UIImage(named: "chooser-moment-button"), backgroundHighlightedImage: UIImage(named: "chooser-moment-button-highlighted")) { () -> Void in
+            showAnmeld(item: "Thought")
+        }
+        
+        let item5 = ExpandingMenuItem(size: menuButtonSize, title: "Føler mig udsat", image: UIImage(named: "chooser-moment-icon-sleep")!, highlightedImage: UIImage(named: "chooser-moment-icon-sleep-highlighted")!, backgroundImage: UIImage(named: "chooser-moment-button"), backgroundHighlightedImage: UIImage(named: "chooser-moment-button-highlighted")) { () -> Void in
+            showAnmeld(item: "etststs")
+        }
+        
+        menuButton.addMenuItems([item1, item2, item3, item4, item5])
+        menuButton.allowSounds = false
+        
+        menuButton.willPresentMenuItems = { (menu) -> Void in
+            print("MenuItems will present.")
+        }
+        
+        menuButton.didDismissMenuItems = { (menu) -> Void in
+            print("MenuItems dismissed.")
+        }
     }
     
     @IBAction func openRegistrationAction(sender: UIButton?) {
@@ -194,7 +238,36 @@ extension MapViewController : MKMapViewDelegate{
 }
 
 private extension MapViewController {
+    @IBAction func anmeld(_ sender: Any) {
+        print("jeg er utryg her....")
+        self.anmeldButton.jumpBtn(4.0, jump2: 4.0)
+    }
     
+    func geoCode(location : CLLocation!){
+        CLGeocoder().reverseGeocodeLocation(location, completionHandler: {(placemarks, error) -> Void in
+            print(location)
+            
+            if error != nil {
+                print("Reverse geocoder failed with error" + (error?.localizedDescription)!)
+                return
+            }
+            
+            if (placemarks?.count)! > 0 {
+                let pm = placemarks?[0]
+                
+                let addressDict : [NSString:NSObject] = pm!.addressDictionary as! [NSString: NSObject]
+                
+                print(addressDict)
+                let addrList = addressDict["FormattedAddressLines"] as! [String]
+                self.headlineLabel.text = addrList.joined(separator: ",")
+            }
+            else {
+                print("Problem with the data received from geocoder")
+            }
+        })
+        
+    }
+
     func updateAnnotations(inMapView mapView: MKMapView,
                            forMapRect root: MKMapRect) {
         guard !mapView.frame.isEmpty && !MKMapRectIsEmpty(root) else {
@@ -251,53 +324,6 @@ private extension MapViewController {
     
 }
 extension MapViewController : CLLocationManagerDelegate {
-    
-    func geoCode(location : CLLocation!){
-        //        /* Only one reverse geocoding can be in progress at a time hence we need to cancel existing
-        //         one if we are getting location updates */
-        //        geoCoder.cancelGeocode()
-        //        geoCoder.reverseGeocodeLocation(location, completionHandler: { (data, error) -&gt; Void in
-        //            guard let placeMarks = data as [CLPlacemark]! else {
-        //                return
-        //            }
-        //            let loc: CLPlacemark = placeMarks[0]
-        //            let addressDict : [NSString:NSObject] = loc.addressDictionary as! [NSString: NSObject]
-        //            let addrList = addressDict["FormattedAddressLines"] as! [String]
-        //            let address = ", ".join(addrList)
-        //            print(address)
-        //            self.address.text = address
-        //            self.previousAddress = address
-        //        })
-        
-        CLGeocoder().reverseGeocodeLocation(location, completionHandler: {(placemarks, error) -> Void in
-            print(location)
-            
-            if error != nil {
-                print("Reverse geocoder failed with error" + (error?.localizedDescription)!)
-                return
-            }
-            
-            if (placemarks?.count)! > 0 {
-                let pm = placemarks?[0]
-                print(pm!)
-                let addressDict : [NSString:NSObject] = pm!.addressDictionary as! [NSString: NSObject]
-                let addrList = addressDict["FormattedAddressLines"] as! [String]
-                self.headlineLabel.text = "\(addrList)"
-            }
-            else {
-                print("Problem with the data received from geocoder")
-            }
-        })
-        
-    }
-    
-    //    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-    //        let location: CLLocation = locations.first!
-    //        self.mapView.centerCoordinate = location.coordinate
-    //        let reg = MKCoordinateRegionMakeWithDistance(location.coordinate, 1500, 1500)
-    //        self.mapView.setRegion(reg, animated: true)
-    //        geoCode(location: location)
-    //    }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print(error)

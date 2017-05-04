@@ -1,8 +1,8 @@
 //
 //  AddRegistrationControllerViewController.swift
-//  Economic
+//  GoSafe
 //
-//  Created by Thomas H. Sandvik on 11/04/2017.
+//  Created by Thomas H. Sandvik
 //  Copyright © 2017 Thomas H. Sandvik. All rights reserved.
 //
 
@@ -35,7 +35,7 @@ class AddRegistrationControllerViewController: UIViewController,UITextFieldDeleg
     
     var registrationViewData:RegistrationViewData!
     
-    fileprivate let addRegistrationPresenter = AddRegistrationPresenter(registrationService: RegistrationService())
+    fileprivate let addRegistrationPresenter = AddRegistrationPresenter(DataLoadService: DataLoadService())
     
     override func viewDidLoad() {
         super.viewDidLoad()

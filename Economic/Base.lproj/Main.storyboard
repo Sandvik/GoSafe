@@ -228,7 +228,7 @@
         <!--Drawer View Controller-->
         <scene sceneID="hYJ-nR-TPu">
             <objects>
-                <viewController storyboardIdentifier="DPDrawerViewController" id="N57-2z-kWt" customClass="DPDrawerViewController" customModule="MenuKit" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DPDrawerViewController" id="N57-2z-kWt" customClass="DPDrawerViewController" customModule="GoSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mKN-qQ-pdN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -305,7 +305,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" showsScale="YES" id="EoN-y2-SRf">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" id="EoN-y2-SRf">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>
@@ -316,15 +316,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="location" id="qTL-ec-uFO">
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="location" id="qTL-ec-uFO">
                                 <rect key="frame" x="165" y="311" width="45" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vGv-fi-iTw">
+                                <rect key="frame" x="145" y="298" width="83" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Anmeld her!">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="anmeld:" destination="T0F-3D-WRM" eventType="touchUpInside" id="SA6-vD-ncS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Registreringer" id="RbB-zk-mKC"/>
                     <connections>
+                        <outlet property="anmeldButton" destination="vGv-fi-iTw" id="tCl-cd-WbU"/>
+                        <outlet property="anmeldImage" destination="qTL-ec-uFO" id="Jwd-na-p8s"/>
                         <outlet property="headlineLabel" destination="5Px-Rd-OLP" id="TaB-Hc-yUw"/>
                         <outlet property="mapView" destination="EoN-y2-SRf" id="q51-WM-GIE"/>
                     </connections>

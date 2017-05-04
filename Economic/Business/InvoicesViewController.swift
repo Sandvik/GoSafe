@@ -1,17 +1,13 @@
 //
 //  InvoicesViewController.swift
-//  Economic
+//  GoSafe
 //
-//  Created by Thomas H. Sandvik on 19/04/2017.
+//  Created by Thomas H. Sandvik
 //  Copyright © 2017 Thomas H. Sandvik. All rights reserved.
 //
 
 import UIKit
 import FRDLivelyButton
-import MenuKit
-
-//MARK: Animationshastighed konstant
-let animationSpeed = 0.3
 
 class InvoicesViewController: DPContentViewController {
     
@@ -20,7 +16,7 @@ class InvoicesViewController: DPContentViewController {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView?
     @IBOutlet weak var headlineLabel: UILabel!
     
-    fileprivate let invoicePresenter = InvoicePresenter(registrationService: RegistrationService())
+    fileprivate let invoicePresenter = InvoicePresenter(DataLoadService: DataLoadService())
     
     fileprivate var invoicesToDisplay = [InvoiceViewData]()// Data to display
     
@@ -28,7 +24,7 @@ class InvoicesViewController: DPContentViewController {
         
         super.viewDidLoad()
         
-        tableView?.register(UINib(nibName: "InvoiceDetailCell", bundle: nil), forCellReuseIdentifier: "InvoiceDetailCell")
+        tableView?.register(UINib(nibName: Constants.CellNames.KInvoiceDetailCell, bundle: nil), forCellReuseIdentifier: Constants.CellNames.KInvoiceDetailCell)
         
         activityIndicator?.hidesWhenStopped = true
         

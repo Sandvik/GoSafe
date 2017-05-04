@@ -1,11 +1,3 @@
-//
-//  QuadTree+sampleMapData.swift
-// BentoMap
-//
-//  Created by Michael Skiba on 7/6/16.
-//  Copyright © 2016 Raizlabs. All rights reserved.
-//
-
 import Foundation
 import MapKit
 import BentoMap

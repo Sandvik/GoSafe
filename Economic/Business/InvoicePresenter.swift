@@ -1,8 +1,8 @@
 //
 //  InvoicePresenterPresenter.swift
-//  Economic
+//  GoSafe
 //
-//  Created by Thomas H. Sandvik on 11/04/2017.
+//  Created by Thomas H. Sandvik
 //  Copyright © 2017 Thomas H. Sandvik. All rights reserved.
 //
 
@@ -19,11 +19,11 @@ protocol InvoiceView: NSObjectProtocol {
 
 class InvoicePresenter {
     
-    fileprivate let registrationService:RegistrationService
+    fileprivate let DataLoadService:DataLoadService
     weak fileprivate var invoiceView : InvoiceView? //avoid retain cycle
     
-    init(registrationService:RegistrationService){
-        self.registrationService = registrationService
+    init(DataLoadService:DataLoadService){
+        self.DataLoadService = DataLoadService
     }
     
     func attachView(_ view:InvoiceView){
@@ -36,7 +36,7 @@ class InvoicePresenter {
     
     func getInvoices(){
         self.invoiceView?.startLoading()
-        registrationService.getInvoices{ [weak self] status in
+        DataLoadService.getInvoices{ [weak self] status in
             self?.invoiceView?.finishLoading()
             if status == "OK"{
                 if(Store.sharedInstance.invoicesArray.count == 0){

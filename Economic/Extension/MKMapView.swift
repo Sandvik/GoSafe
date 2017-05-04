@@ -1,11 +1,3 @@
-//
-//  MapViewExtension.swift
-//
-//  Created by Semper Idem on 15-4-6.
-//  1st Edition Modified on 16-01-26.
-//  Copyright (c) 2015-2016年 星夜暮晨(Semper_Idem). All rights reserved.
-//
-
 import Foundation
 import UIKit
 import MapKit

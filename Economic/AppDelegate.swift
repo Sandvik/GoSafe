@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Economic
+//  GoSafe
 //
-//  Created by Thomas H. Sandvik on 08/04/2017.
+//  Created by Thomas H. Sandvik
 //  Copyright © 2017 Thomas H. Sandvik. All rights reserved.
 //
 

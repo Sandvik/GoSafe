@@ -1,8 +1,8 @@
 //
 //  RegistrationPresenter.swift
-//  Economic
+//  GoSafe
 //
-//  Created by Thomas H. Sandvik on 19/04/2017.
+//  Created by Thomas H. Sandvik
 //  Copyright © 2017 Thomas H. Sandvik. All rights reserved.
 //
 
@@ -19,11 +19,11 @@ protocol RegistrationView: NSObjectProtocol {
 
 class RegistrationPresenter {
     
-    fileprivate let registrationService:RegistrationService
+    fileprivate let DataLoadService:DataLoadService
     weak fileprivate var registrationView : RegistrationView? //avoid retain cycle
     
-    init(registrationService:RegistrationService){
-        self.registrationService = registrationService
+    init(DataLoadService:DataLoadService){
+        self.DataLoadService = DataLoadService
     }
     
     func attachView(_ view:RegistrationView){
@@ -36,7 +36,7 @@ class RegistrationPresenter {
     
     func getRegistrations(){
         self.registrationView?.startLoading()
-        registrationService.getRegistrations{ [weak self] status in
+        DataLoadService.getRegistrations{ [weak self] status in
             self?.registrationView?.finishLoading()
             if status == "OK"{
                 if(Store.sharedInstance.registrationArray.count == 0){
