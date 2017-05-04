@@ -68,7 +68,7 @@ private extension CLLocationCoordinate2D {
 private extension Double {
     static func cappedRandom(min minValue: Double, max maxValue: Double) -> Double {
         let exponent: Double = 10000.0
-        let diff = UInt32(abs(minValue - maxValue) * exponent)
+        let diff = UInt32(Swift.abs(minValue - maxValue) * exponent)
         let randomNumber = Double(arc4random_uniform(diff)) / exponent
         return min(minValue, maxValue) + randomNumber
     }

@@ -9,6 +9,7 @@ struct Constants {
   struct ApiRequestNames{
     //MARK: APIRequest konstanter
     static let kLoadGEOData = "loadGEOData"
+    static let kSaveUnSafe = "saveUnSafe"
   }
   
   struct CellNames {
@@ -19,7 +20,9 @@ struct Constants {
     }
     
     struct GoSafeApi {
-        static let REGULAR_GET_GEOINFO: NSDictionary = ["service" : "api/Search/GetGeoData", "transferMethod" : "GET" ,  "headers" : API_DEFAULT_HEADERS]
+        static let REGULAR_GET_GEOINFO: NSDictionary = ["service" : "api/Get/GetGeoData", "transferMethod" : "GET" ,  "headers" : API_DEFAULT_HEADERS]
+        
+         static let REGULAR_ADD_UNSAFE: NSDictionary = ["service" : "api/Add/AddUnsafe", "transferMethod" : "POST"]
     }
 
 }

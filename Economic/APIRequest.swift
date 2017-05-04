@@ -35,6 +35,14 @@ open class APIRequest{
     deinit {
     }
     
+    open func saveUnsafe(postData:String){
+        serviceTxt = Constants.GoSafeApi.REGULAR_ADD_UNSAFE["service"] as! String
+        headers = self.apiLoginHeader
+        urlString = "\(self.remoteServer)/\(serviceTxt)?\(postData)"
+        self.executeRequestWithParameters(.post, urlString: urlString, headers: headers, parameters:parameters)
+    }
+
+    
     open func loadGEOData(propertyID: Int, cellWidth : Int, geoType: String){
         serviceTxt = Constants.GoSafeApi.REGULAR_GET_GEOINFO["service"] as! String
         headers = Constants.GoSafeApi.REGULAR_GET_GEOINFO["headers"] as? Dictionary<String, String>

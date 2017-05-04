@@ -196,7 +196,7 @@ public extension MKMapRect {
     public static var zero: MKMapRect { return MKMapRect(x: 0, y: 0, width: 0, height: 0) }
     public static var null: MKMapRect { return MKMapRectNull }
     public static var infinite: MKMapRect {
-        let max = DBL_MAX
+        let max = Double.greatestFiniteMagnitude
         let origin = -max / 2
         return MKMapRectMake(origin, origin, max, max)
     }
@@ -463,14 +463,14 @@ fileprivate extension Double {
     fileprivate var pixelSpaceYForLatitude: Double {
         if self == 90 { return 0 }
         else if self == -90 { return mercatorOffset * 2 }
-        else { return (mercatorOffset - mercatorRadius * log((1 + sin(self * M_PI / 180)) / (1 - sin(self * M_PI / 180))) / 2).rounded() }
+        else { return (mercatorOffset - mercatorRadius * log((1 + sin(self * Double.pi / 180)) / (1 - sin(self * Double.pi / 180))) / 2).rounded() }
     }
     
     fileprivate var longitudeForPixelSpaceX: Double {
-        return ((self.rounded() - mercatorOffset) / mercatorRadius) * 180 / M_PI
+        return ((self.rounded() - mercatorOffset) / mercatorRadius) * 180 / Double.pi
     }
     
     fileprivate var latitudeForPixelSpaceY: Double {
-        return (M_PI / 2 - 2 * atan(exp((self.rounded() - mercatorOffset) / mercatorRadius))) * 180 / M_PI
+        return (Double.pi / 2 - 2 * atan(exp((self.rounded() - mercatorOffset) / mercatorRadius))) * 180 / Double.pi
     }
 }

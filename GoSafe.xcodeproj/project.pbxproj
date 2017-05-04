@@ -47,10 +47,21 @@
 		0BB4B0D31EBB144C000A9B3F /* DPLeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB4B0CC1EBB144C000A9B3F /* DPLeftMenuViewController.swift */; };
 		0BB4B0D41EBB144C000A9B3F /* DPSlideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB4B0CD1EBB144C000A9B3F /* DPSlideMenuModel.swift */; };
 		0BB4B0D51EBB144C000A9B3F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BB4B0CE1EBB144C000A9B3F /* Info.plist */; };
+		0BB4B0E21EBB19E5000A9B3F /* GoSafeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB4B0E11EBB19E5000A9B3F /* GoSafeTests.swift */; };
 		0BE254A51EA6183D003DFA97 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE254A41EA6183D003DFA97 /* MainViewController.swift */; };
 		0BE254B41EA63EBD003DFA97 /* InvoicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE254B31EA63EBD003DFA97 /* InvoicesViewController.swift */; };
 		D5C7F7C965731226D26C32E8 /* Pods_GoSafe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38CEE91CA43EAC378782570 /* Pods_GoSafe.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0BB4B0E41EBB19E5000A9B3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B168EBC1E995CFC0063E523 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B168EC31E995CFC0063E523;
+			remoteInfo = GoSafe;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		0B15168E1EA7F9EE008D0395 /* Embed Frameworks */ = {
@@ -111,6 +122,9 @@
 		0BB4B0CC1EBB144C000A9B3F /* DPLeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DPLeftMenuViewController.swift; path = Eksternal/MenuKit/DPLeftMenuViewController.swift; sourceTree = "<group>"; };
 		0BB4B0CD1EBB144C000A9B3F /* DPSlideMenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DPSlideMenuModel.swift; path = Eksternal/MenuKit/DPSlideMenuModel.swift; sourceTree = "<group>"; };
 		0BB4B0CE1EBB144C000A9B3F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Eksternal/MenuKit/Info.plist; sourceTree = "<group>"; };
+		0BB4B0DF1EBB19E5000A9B3F /* GoSafeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoSafeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BB4B0E11EBB19E5000A9B3F /* GoSafeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoSafeTests.swift; sourceTree = "<group>"; };
+		0BB4B0E31EBB19E5000A9B3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BE254A41EA6183D003DFA97 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0BE254B31EA63EBD003DFA97 /* InvoicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InvoicesViewController.swift; path = Business/InvoicesViewController.swift; sourceTree = "<group>"; };
 		221965496B9C4E5DDA63FB7C /* Pods_EconomicUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EconomicUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +145,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0BB4B0DC1EBB19E5000A9B3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -147,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				0B168EC61E995CFC0063E523 /* GoSafe */,
+				0BB4B0E01EBB19E5000A9B3F /* GoSafeTests */,
 				0B168EC51E995CFC0063E523 /* Products */,
 				9504BBBB19E1EC006324D4AF /* Pods */,
 				26025E208496E97F3531AF4C /* Frameworks */,
@@ -157,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				0B168EC41E995CFC0063E523 /* GoSafe.app */,
+				0BB4B0DF1EBB19E5000A9B3F /* GoSafeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -306,6 +329,15 @@
 			name = Menu;
 			sourceTree = "<group>";
 		};
+		0BB4B0E01EBB19E5000A9B3F /* GoSafeTests */ = {
+			isa = PBXGroup;
+			children = (
+				0BB4B0E11EBB19E5000A9B3F /* GoSafeTests.swift */,
+				0BB4B0E31EBB19E5000A9B3F /* Info.plist */,
+			);
+			path = GoSafeTests;
+			sourceTree = "<group>";
+		};
 		0BE254B51EA63EC7003DFA97 /* Invoices */ = {
 			isa = PBXGroup;
 			children = (
@@ -363,6 +395,24 @@
 			productReference = 0B168EC41E995CFC0063E523 /* GoSafe.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0BB4B0DE1EBB19E5000A9B3F /* GoSafeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BB4B0E61EBB19E6000A9B3F /* Build configuration list for PBXNativeTarget "GoSafeTests" */;
+			buildPhases = (
+				0BB4B0DB1EBB19E5000A9B3F /* Sources */,
+				0BB4B0DC1EBB19E5000A9B3F /* Frameworks */,
+				0BB4B0DD1EBB19E5000A9B3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BB4B0E51EBB19E5000A9B3F /* PBXTargetDependency */,
+			);
+			name = GoSafeTests;
+			productName = GoSafeTests;
+			productReference = 0BB4B0DF1EBB19E5000A9B3F /* GoSafeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -377,6 +427,12 @@
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = W7U79PMD74;
 						ProvisioningStyle = Automatic;
+					};
+					0BB4B0DE1EBB19E5000A9B3F = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = W7U79PMD74;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0B168EC31E995CFC0063E523;
 					};
 				};
 			};
@@ -394,6 +450,7 @@
 			projectRoot = "";
 			targets = (
 				0B168EC31E995CFC0063E523 /* GoSafe */,
+				0BB4B0DE1EBB19E5000A9B3F /* GoSafeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -412,6 +469,13 @@
 				0B168ED21E995CFC0063E523 /* LaunchScreen.storyboard in Resources */,
 				0B168ECF1E995CFC0063E523 /* Assets.xcassets in Resources */,
 				0B168ECD1E995CFC0063E523 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BB4B0DD1EBB19E5000A9B3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,7 +583,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0BB4B0DB1EBB19E5000A9B3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BB4B0E21EBB19E5000A9B3F /* GoSafeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0BB4B0E51EBB19E5000A9B3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B168EC31E995CFC0063E523 /* GoSafe */;
+			targetProxy = 0BB4B0E41EBB19E5000A9B3F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0B168ECB1E995CFC0063E523 /* Main.storyboard */ = {
@@ -673,6 +753,34 @@
 			};
 			name = Release;
 		};
+		0BB4B0E71EBB19E6000A9B3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = W7U79PMD74;
+				INFOPLIST_FILE = GoSafeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Aipops.GoSafeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoSafe.app/GoSafe";
+			};
+			name = Debug;
+		};
+		0BB4B0E81EBB19E6000A9B3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = W7U79PMD74;
+				INFOPLIST_FILE = GoSafeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Aipops.GoSafeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoSafe.app/GoSafe";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -693,6 +801,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		0BB4B0E61EBB19E6000A9B3F /* Build configuration list for PBXNativeTarget "GoSafeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BB4B0E71EBB19E6000A9B3F /* Debug */,
+				0BB4B0E81EBB19E6000A9B3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
