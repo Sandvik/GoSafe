@@ -75,14 +75,17 @@ extension DataLoadService : APIRequestDelegate {
     func request(_ req: APIRequest, finishedWithResult : AnyObject){
         
         if req.requestID == Constants.ApiRequestNames.kSaveUnSafe{
+            // Get data - Parse Data -- Deliver the Data to eg. Store
             
         }
     }
     
     func request(_ req: APIRequest, failedWithError : NSError){
+        
     }
     
     func progress(_ req: APIRequest, bytesTotal: Int64, bytesRead: Int64) {
+        
     }
 }
 

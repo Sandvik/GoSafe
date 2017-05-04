@@ -48,6 +48,8 @@
 		0BB4B0D41EBB144C000A9B3F /* DPSlideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB4B0CD1EBB144C000A9B3F /* DPSlideMenuModel.swift */; };
 		0BB4B0D51EBB144C000A9B3F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BB4B0CE1EBB144C000A9B3F /* Info.plist */; };
 		0BB4B0E21EBB19E5000A9B3F /* GoSafeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB4B0E11EBB19E5000A9B3F /* GoSafeTests.swift */; };
+		0BB4B0EB1EBB3997000A9B3F /* locationArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BB4B0E91EBB3997000A9B3F /* locationArrow.png */; };
+		0BB4B0EC1EBB3997000A9B3F /* locationArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BB4B0EA1EBB3997000A9B3F /* locationArrow@2x.png */; };
 		0BE254A51EA6183D003DFA97 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE254A41EA6183D003DFA97 /* MainViewController.swift */; };
 		0BE254B41EA63EBD003DFA97 /* InvoicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE254B31EA63EBD003DFA97 /* InvoicesViewController.swift */; };
 		D5C7F7C965731226D26C32E8 /* Pods_GoSafe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38CEE91CA43EAC378782570 /* Pods_GoSafe.framework */; };
@@ -125,6 +127,8 @@
 		0BB4B0DF1EBB19E5000A9B3F /* GoSafeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoSafeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BB4B0E11EBB19E5000A9B3F /* GoSafeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoSafeTests.swift; sourceTree = "<group>"; };
 		0BB4B0E31EBB19E5000A9B3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BB4B0E91EBB3997000A9B3F /* locationArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locationArrow.png; sourceTree = "<group>"; };
+		0BB4B0EA1EBB3997000A9B3F /* locationArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locationArrow@2x.png"; sourceTree = "<group>"; };
 		0BE254A41EA6183D003DFA97 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0BE254B31EA63EBD003DFA97 /* InvoicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InvoicesViewController.swift; path = Business/InvoicesViewController.swift; sourceTree = "<group>"; };
 		221965496B9C4E5DDA63FB7C /* Pods_EconomicUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EconomicUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -228,6 +232,8 @@
 		0B176ABB1E9F6EAE00A32F56 /* Ressourses */ = {
 			isa = PBXGroup;
 			children = (
+				0BB4B0E91EBB3997000A9B3F /* locationArrow.png */,
+				0BB4B0EA1EBB3997000A9B3F /* locationArrow@2x.png */,
 				0B22BE861EB32EFB00948001 /* QuadTree+SampleData.swift */,
 				0B176AB91E9F6EA700A32F56 /* lineGray.png */,
 				0B2E97EA1EAF4A00000B6ABA /* myGpx.gpx */,
@@ -462,7 +468,9 @@
 			files = (
 				0B176AC51E9F6F8B00A32F56 /* RegistrationCell.xib in Resources */,
 				0B16FD3F1EA892CE004BCB82 /* Localizable.strings in Resources */,
+				0BB4B0EB1EBB3997000A9B3F /* locationArrow.png in Resources */,
 				0BB4B0D51EBB144C000A9B3F /* Info.plist in Resources */,
+				0BB4B0EC1EBB3997000A9B3F /* locationArrow@2x.png in Resources */,
 				0B16FD461EA89D50004BCB82 /* InvoiceDetailCell.xib in Resources */,
 				0B2E97EB1EAF4A00000B6ABA /* myGpx.gpx in Resources */,
 				0B176ABA1E9F6EA700A32F56 /* lineGray.png in Resources */,
@@ -809,6 +817,7 @@
 				0BB4B0E81EBB19E6000A9B3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

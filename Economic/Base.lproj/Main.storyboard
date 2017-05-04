@@ -331,6 +331,14 @@
                                     <action selector="anmeld:" destination="T0F-3D-WRM" eventType="touchUpInside" id="SA6-vD-ncS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="erD-Vd-m8f" userLabel="FindMeBtn">
+                                <rect key="frame" x="16" y="601" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" backgroundImage="locationArrow.png"/>
+                                <connections>
+                                    <action selector="locateMe:" destination="T0F-3D-WRM" eventType="touchUpInside" id="NXt-ap-jh2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -350,6 +358,7 @@
     <resources>
         <image name="lineGray.png" width="310" height="1"/>
         <image name="location" width="32" height="32"/>
+        <image name="locationArrow.png" width="37" height="37"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

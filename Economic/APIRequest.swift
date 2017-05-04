@@ -16,7 +16,6 @@ open class APIRequest{
     var headers: [String: String]?
     var urlString: String
     open var parameters:[String: AnyObject]?
-    //var searchCriteriaParameters:[String: String]?
     open var apiLoginHeader: [String:String]?
     open var remoteServer:String
     //MARK: init
@@ -39,15 +38,16 @@ open class APIRequest{
         serviceTxt = Constants.GoSafeApi.REGULAR_ADD_UNSAFE["service"] as! String
         headers = self.apiLoginHeader
         urlString = "\(self.remoteServer)/\(serviceTxt)?\(postData)"
+        
         self.executeRequestWithParameters(.post, urlString: urlString, headers: headers, parameters:parameters)
     }
-
+    
     
     open func loadGEOData(propertyID: Int, cellWidth : Int, geoType: String){
         serviceTxt = Constants.GoSafeApi.REGULAR_GET_GEOINFO["service"] as! String
         headers = Constants.GoSafeApi.REGULAR_GET_GEOINFO["headers"] as? Dictionary<String, String>
-      //?id={id}&width={width}&type={type}
         urlString = String(format: "%@/%@?id=\(propertyID)&width=\(cellWidth)&type=\(geoType)", self.remoteServer, serviceTxt)
+        
         self.executeRequestWithParameters(.get, urlString: urlString, headers: headers, parameters:parameters)
     }
     
@@ -57,13 +57,12 @@ open class APIRequest{
                 response in guard response.result.isSuccess else {
                     if let delegate = self.delegate {
                         if response.response?.statusCode == 200{
-                            //print("JSON could not be serialized. Input data was nil or zero length.")
                             delegate.request(self, finishedWithResult:response.data! as AnyObject)
                         }
                         else{
                             let datastring = NSString(data: response.data!, encoding: String.Encoding.utf8.rawValue)
                             var eCode:NSInteger = 0
-                  
+                            
                             if let erCode = response.response{
                                 eCode = erCode.statusCode
                             }
@@ -74,7 +73,7 @@ open class APIRequest{
                 }
                 
                 if let JSON = response.data {
-                     if let delegate = self.delegate {
+                    if let delegate = self.delegate {
                         if response.response?.statusCode == 400 || response.response?.statusCode == 401  || response.response?.statusCode == 500{
                             let datastring = NSString(data: response.data!, encoding: String.Encoding.utf8.rawValue)
                             delegate.request(self, failedWithError:NSError(domain:self.requestID, code: (response.response?.statusCode)!, userInfo: ["message":datastring!]))
@@ -85,6 +84,5 @@ open class APIRequest{
                     }
                 }
         }
-    }
-    
+    }    
 }

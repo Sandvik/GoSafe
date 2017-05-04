@@ -92,29 +92,25 @@ class MapViewController: DPContentViewController {
         menuButton.center = CGPoint(x: self.view.bounds.width - 30.0, y: self.view.bounds.height - 50.0)
         self.view.addSubview(menuButton)
         
-        func showAnmeld(item: String) {
-            self.anmeldButton.fadeIn(duration: animationSpeed, value: 1.0)
-            self.anmeldImage.fadeIn(duration: animationSpeed, value: 1.0)
-        }
         
         let item1 = ExpandingMenuItem(size: menuButtonSize, title: "Gruppe af mennesker", image: UIImage(named: "chooser-moment-icon-music")!, highlightedImage: UIImage(named: "chooser-moment-icon-place-highlighted")!, backgroundImage: UIImage(named: "chooser-moment-button"), backgroundHighlightedImage: UIImage(named: "chooser-moment-button-highlighted")) { () -> Void in
-            showAnmeld(item: "Music")
+            self.showAnmeld(item: "Music")
         }
         
         let item2 = ExpandingMenuItem(size: menuButtonSize, title: "Enkeltperson", image: UIImage(named: "chooser-moment-icon-place")!, highlightedImage: UIImage(named: "chooser-moment-icon-place-highlighted")!, backgroundImage: UIImage(named: "chooser-moment-button"), backgroundHighlightedImage: UIImage(named: "chooser-moment-button-highlighted")) { () -> Void in
-            showAnmeld(item: "Place")
+            self.showAnmeld(item: "Place")
         }
         
         let item3 = ExpandingMenuItem(size: menuButtonSize, title: "Det er øde", image: UIImage(named: "chooser-moment-icon-camera")!, highlightedImage: UIImage(named: "chooser-moment-icon-camera-highlighted")!, backgroundImage: UIImage(named: "chooser-moment-button"), backgroundHighlightedImage: UIImage(named: "chooser-moment-button-highlighted")) { () -> Void in
-            showAnmeld(item: "Camera")
+            self.showAnmeld(item: "Camera")
         }
         
         let item4 = ExpandingMenuItem(size: menuButtonSize, title: "Der er mørkt", image: UIImage(named: "chooser-moment-icon-thought")!, highlightedImage: UIImage(named: "chooser-moment-icon-thought-highlighted")!, backgroundImage: UIImage(named: "chooser-moment-button"), backgroundHighlightedImage: UIImage(named: "chooser-moment-button-highlighted")) { () -> Void in
-            showAnmeld(item: "Thought")
+            self.showAnmeld(item: "Thought")
         }
         
         let item5 = ExpandingMenuItem(size: menuButtonSize, title: "Føler mig udsat", image: UIImage(named: "chooser-moment-icon-sleep")!, highlightedImage: UIImage(named: "chooser-moment-icon-sleep-highlighted")!, backgroundImage: UIImage(named: "chooser-moment-button"), backgroundHighlightedImage: UIImage(named: "chooser-moment-button-highlighted")) { () -> Void in
-            showAnmeld(item: "etststs")
+            self.showAnmeld(item: "etststs")
         }
         
         menuButton.addMenuItems([item1, item2, item3, item4, item5])
@@ -129,9 +125,35 @@ class MapViewController: DPContentViewController {
         }
     }
     
+    func showAnmeld(item: String) {
+        if item == "Camera"{
+            self.takePhoto()
+            return
+        }
+        self.anmeldButton.fadeIn(duration: animationSpeed, value: 1.0)
+        self.anmeldImage.fadeIn(duration: animationSpeed, value: 1.0)
+    }
+    
+    func takePhoto() {
+        var imagePicker: UIImagePickerController!
+        imagePicker =  UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.sourceType = .camera
+        
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
     @IBAction func openRegistrationAction(sender: UIButton?) {
         self.openRegistration(registrationViewData: nil)
     }
+    
+    @IBAction func locateMe(_ sender:UIButton!){
+        let status:CLAuthorizationStatus = CLLocationManager.authorizationStatus()
+        if status == .authorizedAlways || status == .authorizedWhenInUse {
+            mapView.setCenterCoordinate(mapView.userLocation.coordinate, zoomLevel: 14,animated: true)
+        }        
+    }
+
     
     func openRegistration(registrationViewData:RegistrationViewData?){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -149,6 +171,25 @@ class MapViewController: DPContentViewController {
         registrationPresenter.detachView()
     }
     
+}
+
+extension MapViewController: UIImagePickerControllerDelegate{
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]){
+        
+        let image: UIImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        // Do something with image
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController){
+        dismiss(animated: true, completion: nil)
+    }
+
+}
+
+extension MapViewController : UINavigationControllerDelegate{
+
 }
 
 extension MapViewController : AddRegistrationControllerDelegate{

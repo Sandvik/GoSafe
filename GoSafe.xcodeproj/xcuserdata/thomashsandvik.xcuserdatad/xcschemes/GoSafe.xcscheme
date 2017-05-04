@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0B168ED71E995CFC0063E523"
+               BlueprintIdentifier = "0BB4B0DE1EBB19E5000A9B3F"
                BuildableName = "GoSafeTests.xctest"
                BlueprintName = "GoSafeTests"
                ReferencedContainer = "container:GoSafe.xcodeproj">
