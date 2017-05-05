@@ -3,7 +3,7 @@ import UIKit
 struct Constants {
   
   struct ApiName{
-    static let API_SERVER = "https://api..dk"
+    static let API_SERVER = "https://jsonplaceholder.typicode.com"
   }
   
   struct ApiRequestNames{

@@ -290,7 +290,9 @@ private extension MapViewController {
     @IBAction func anmeld(_ sender: Any) {
         self.anmeldButton.jumpBtn(4.0, jump2: 4.0)
         
-        self.dismissAnmeld(dismiss: true)
+        registrationPresenter.saveAnmeld(data :"")
+        
+        self.dismissAnmeld(dismiss: false)
         // Call backend and push object
         let alert = UIAlertController(title: "Anmeldt!!!", message: "Din registrering er klar!!!", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))

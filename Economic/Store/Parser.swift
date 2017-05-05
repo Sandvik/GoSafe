@@ -22,6 +22,8 @@ class Parser{
     init(){
     }
     
+    
+    
     // Fetch serverdata and translate into model object
     func loadRegistrations(registrations :NSData) -> String{
         var status: String = "OK"  // Mocked
@@ -61,14 +63,11 @@ class Parser{
     // Fetch serverdata and translate
     func loadAddRegistration(serverStatus :NSData) -> String{
         var status: String = "OK"  // Mocked
-        
-        /**
-         REMOVE:
-         Just as an illustration
-         */
-        do {
+         do {
             let json = try JSONSerialization.jsonObject(with: serverStatus as Data, options: []) as! [String: AnyObject]
-            status = json["status"] as! String
+            
+            print(json)
+            //status = json["status"] as! String
         }
             
         catch let error as NSError {

@@ -10,9 +10,15 @@ import Foundation
 
 let delayTime = DispatchTime.now() + Double(Int64(1 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
 
-class DataLoadService {
+//MARK: protocol
+protocol DataLoadServiceDelegate {
+    func dataLoadStatus(_ status:String, methodName:String)
+}
+
+class DataLoadService: NSObject{
+    var delegate: DataLoadServiceDelegate?
     
-    func saveAgent(){
+    func saveUnSafe(data: String){
         let request = APIRequest(dlg: self)
         request.remoteServer = Constants.ApiName.API_SERVER
         request.apiLoginHeader = API_DEFAULT_HEADERS
@@ -61,10 +67,12 @@ class DataLoadService {
 extension DataLoadService : APIRequestDelegate {
     
     func request(_ req: APIRequest, finishedWithResult : AnyObject){
-        
+        print(finishedWithResult)
         if req.requestID == Constants.ApiRequestNames.kSaveUnSafe{
             // Get data - Parse Data -- Deliver the Data to eg. Store
-            
+            let parserManager: Parser = Parser()
+            let status = parserManager.loadAddRegistration(serverStatus: finishedWithResult as! NSData)
+            self.delegate?.dataLoadStatus(status, methodName: Constants.ApiRequestNames.kSaveUnSafe)
         }
     }
     

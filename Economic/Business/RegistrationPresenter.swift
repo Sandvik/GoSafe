@@ -19,11 +19,14 @@ protocol RegistrationView: NSObjectProtocol {
 
 class RegistrationPresenter {
     
-    fileprivate let DataLoadService:DataLoadService
+    let dataLoadService:DataLoadService
+    
     weak fileprivate var registrationView : RegistrationView? //avoid retain cycle
     
+    
     init(DataLoadService:DataLoadService){
-        self.DataLoadService = DataLoadService
+        self.dataLoadService = DataLoadService
+        self.dataLoadService.delegate = self
     }
     
     func attachView(_ view:RegistrationView){
@@ -34,9 +37,13 @@ class RegistrationPresenter {
         registrationView = nil
     }
     
+    func saveAnmeld(data: String){ //genuine servicecall
+        self.dataLoadService.saveUnSafe(data: "")
+    }
+    
     func getRegistrations(){
         self.registrationView?.startLoading()
-        DataLoadService.getRegistrations{ [weak self] status in
+        self.dataLoadService.getRegistrations{ [weak self] status in
             self?.registrationView?.finishLoading()
             if status == "OK"{
                 if(Store.sharedInstance.registrationArray.count == 0){
@@ -53,6 +60,19 @@ class RegistrationPresenter {
             else{
                 self?.registrationView?.setEmptyRegistrations()
             }
+        }
+    }
+}
+
+extension RegistrationPresenter : DataLoadServiceDelegate{
+    func dataLoadStatus(_ status:String, methodName:String){
+        switch methodName {
+        case Constants.ApiRequestNames.kSaveUnSafe:
+            print("Type is SaveUnSafe and status is \(status)")
+        case Constants.ApiRequestNames.kLoadGEOData:
+            print("Method is LoadGEOData and status is \(status)")
+        default:
+            print("Method is something else and status is \(status)")
         }
     }
 }

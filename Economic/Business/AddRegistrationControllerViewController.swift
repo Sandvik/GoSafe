@@ -60,8 +60,8 @@ class AddRegistrationControllerViewController: UIViewController,UITextFieldDeleg
         self.cancelBtn.setTitle(NSLocalizedString("ForTrydKnap", comment: ""),for: .normal)
         
         self.txtName.placeholder = NSLocalizedString("Navn", comment: "")
-        self.txtProjectName.placeholder = NSLocalizedString("OmraadeNavn", comment: "")
-        self.txtMinutesSpend.placeholder = NSLocalizedString("TidForbrugt", comment: "")
+        self.txtProjectName.placeholder = NSLocalizedString("TidForbrugt", comment: "")
+        self.txtMinutesSpend.placeholder = NSLocalizedString("ProjektNavn", comment: "")
         
     }
     
@@ -104,7 +104,7 @@ class AddRegistrationControllerViewController: UIViewController,UITextFieldDeleg
         
         validator.registerField(txtMinutesSpend, errorLabel: txtMinutesSpendErrorLabel, rules: [RequiredRule(message: NSLocalizedString("PaakraevetFelt", comment: "")), FloatRule(message: NSLocalizedString("KunNummer", comment: ""))])
         
-        validator.registerField(txtProjectName, errorLabel: txtProjectNameErrorLabel, rules: [RequiredRule(message: NSLocalizedString("PaakraevetFelt", comment: "")), AlphaNumericRule(message: NSLocalizedString("KunGyldigtAreanavn", comment: ""))])
+        validator.registerField(txtProjectName, errorLabel: txtProjectNameErrorLabel, rules: [RequiredRule(message: NSLocalizedString("PaakraevetFelt", comment: "")), AlphaNumericRule(message: NSLocalizedString("KunGyldigtProjektnavn", comment: ""))])
     }
     
     
