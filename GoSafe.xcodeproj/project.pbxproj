@@ -198,8 +198,7 @@
 				0B168ECE1E995CFC0063E523 /* Assets.xcassets */,
 				0B168ED31E995CFC0063E523 /* Info.plist */,
 			);
-			name = GoSafe;
-			path = Economic;
+			path = GoSafe;
 			sourceTree = "<group>";
 		};
 		0B176AB61E9F6DFD00A32F56 /* Extensions */ = {
@@ -471,7 +470,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "TAGS=\"TODO: |FIXME: |REMOVE:\"\nfind \"${SRCROOT}/Economic\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
+			shellScript = "TAGS=\"TODO: |FIXME: |REMOVE:\"\nfind \"${SRCROOT}/GoSafe\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
 		};
 		1EB244A7F1F2AEF5CA3D01DC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -749,7 +748,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W7U79PMD74;
-				INFOPLIST_FILE = Economic/Info.plist;
+				INFOPLIST_FILE = GoSafe/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = Aipops.GoSafe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -763,7 +762,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W7U79PMD74;
-				INFOPLIST_FILE = Economic/Info.plist;
+				INFOPLIST_FILE = GoSafe/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = Aipops.GoSafe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;

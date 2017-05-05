@@ -84,7 +84,7 @@
       <AdditionalOptions>
       </AdditionalOptions>
       <LocationScenarioReference
-         identifier = "../Economic/Ressources/myGpx.gpx"
+         identifier = "../GoSafe/Ressources/myGpx.gpx"
          referenceType = "0">
       </LocationScenarioReference>
    </LaunchAction>
