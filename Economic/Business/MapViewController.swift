@@ -83,9 +83,6 @@ class MapViewController: DPContentViewController {
     }
     
     fileprivate func configureExpandingMenuButton() {
-        let X_Co: CGFloat = UIScreen.main.bounds.size.width / 2
-        let Y_Co: CGFloat = UIScreen.main.bounds.size.height - 50
-        
         let menuButtonSize: CGSize = CGSize(width: 64.0, height: 64.0)
         let menuButton = ExpandingMenuButton(frame: CGRect(origin: CGPoint.zero, size: menuButtonSize), centerImage: UIImage(named: "chooser-button-tab")!, centerHighlightedImage: UIImage(named: "chooser-button-tab-highlighted")!)
      
@@ -130,8 +127,19 @@ class MapViewController: DPContentViewController {
             self.takePhoto()
             return
         }
-        self.anmeldButton.fadeIn(duration: animationSpeed, value: 1.0)
-        self.anmeldImage.fadeIn(duration: animationSpeed, value: 1.0)
+        self.dismissAnmeld(dismiss: false)
+    }
+    
+    func dismissAnmeld(dismiss :Bool){
+        if !dismiss{
+            self.anmeldButton.fadeIn(duration: animationSpeed, value: 1.0)
+            self.anmeldImage.fadeIn(duration: animationSpeed, value: 1.0)
+            self.headlineLabel.fadeIn(duration: animationSpeed, value: 1.0)
+        }else{
+            self.anmeldButton.fadeOut(duration: animationSpeed)
+            self.anmeldImage.fadeOut(duration: animationSpeed)
+            self.headlineLabel.fadeOut(duration: animationSpeed)
+        }
     }
     
     func takePhoto() {
@@ -178,6 +186,9 @@ extension MapViewController: UIImagePickerControllerDelegate{
         
         let image: UIImage = info[UIImagePickerControllerOriginalImage] as! UIImage
         // Do something with image
+        let imageView = UIImageView(image: image)
+        imageView.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
+        view.addSubview(imageView)
         
         dismiss(animated: true, completion: nil)
     }
@@ -248,10 +259,7 @@ extension MapViewController : MKMapViewDelegate{
         else if let cluster = annotation as? ClusterAnnotation {
             annotationView = mapView.dequeueAnnotationView(for: cluster) as ClusterAnnotationView
         }
-        //        else {
-        //            fatalError("Unexpected annotation type found")
-        //            print("Unexpected annotation type found")
-        //        }
+  
         return annotationView
     }
     
@@ -280,8 +288,13 @@ extension MapViewController : MKMapViewDelegate{
 
 private extension MapViewController {
     @IBAction func anmeld(_ sender: Any) {
-        print("jeg er utryg her....")
         self.anmeldButton.jumpBtn(4.0, jump2: 4.0)
+        
+        self.dismissAnmeld(dismiss: true)
+        // Call backend and push object
+        let alert = UIAlertController(title: "Anmeldt!!!", message: "Din registrering er klar!!!", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     func geoCode(location : CLLocation!){

@@ -44,7 +44,7 @@ class RegistrationPresenter {
                 }
                 else{
                     let mappedRegistrations: [RegistrationViewData] = Store.sharedInstance.registrationArray.map{
-                        return RegistrationViewData(name: "\($0.firstName) \($0.lastName)", minutesSpend: "\($0.minutesSpend)", projectName: $0.projectName)
+                        return RegistrationViewData(name: "\($0.firstName) \($0.lastName)", minutesSpend: "\($0.minutesSpend)", area: $0.area)
                     }                    
                     
                     self?.registrationView?.setRegistrations(mappedRegistrations)

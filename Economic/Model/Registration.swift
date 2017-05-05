@@ -13,5 +13,5 @@ struct Registration {
     let lastName: String
     let email: String
     let minutesSpend: Int
-    let projectName: String
+    let area: String
 }

@@ -38,7 +38,7 @@ class AddRegistrationPresenter {
     
     func setRegistration(registrationViewData: RegistrationViewData){
         self.addRegistrationView?.startLoading()
-        let registrationData: Registration = Registration(firstName: registrationViewData.name, lastName: "", email: "", minutesSpend: (Int)(registrationViewData.minutesSpend)!, projectName: registrationViewData.projectName)
+        let registrationData: Registration = Registration(firstName: registrationViewData.name, lastName: "", email: "", minutesSpend: (Int)(registrationViewData.minutesSpend)!, area: registrationViewData.area)
         
         DataLoadService.setRegistration(registration: registrationData){ [weak self] status in
             

@@ -11,14 +11,12 @@ IndtastRegistrering = "Indtast Registrering";
 PaakraevetFelt = "Feltet er påkrævet";
 GyldigtNavn = "Skal være gyldigt navn";
 KunNummer = "Kan kun være et nummer";
-KunGyldigtProjektnavn = "Skal være gyldigt projektnavn";
+KunGyldigtAreanavn = "Skal være gyldigt projektnavn";
 RegistreringOverskrift = "Åbne registreringer";
 ForTrydKnap = "Fortryd";
 Registreringer = "Registreringer";
-Fakturaer = "Fakturaer";
-Faktura = "Faktura";
 Navn = "Navn";
 TidForbrugt = "Tid Forbrugt";
-ProjektNavn = "Projekt Navn";
+OmraadeNavn = "Område Navn";
 Fakturering = "Fakturering";
 

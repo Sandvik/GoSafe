@@ -20,7 +20,7 @@ class RegistrationCell: UITableViewCell {
         self.registrationViewData = registrationViewData
         nameLabel.text = registrationViewData.name
         minutesSpendLabel.text = registrationViewData.minutesSpend
-        projectNameLabel.text = registrationViewData.projectName
+        projectNameLabel.text = registrationViewData.area
         containerView.applyPlainShadow()
     }
     

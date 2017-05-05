@@ -46,17 +46,8 @@ class MainViewController: UIViewController {
             title: NSLocalizedString("Registreringer", comment: ""),
             cellHeight: 50,
             actionBlock: nil)
-        let slideMenuInvoices: DPSlideMenuModel = DPSlideMenuModel(
-            color: UIColor(red:0.94, green:0.94, blue:0.96, alpha:1.0)
-            ,
-            controllerClassName: "InvoicesViewController",
-            title: NSLocalizedString("osv, osv", comment: ""),
-            cellHeight: 50,
-            actionBlock: nil)
         
-        
-        
-        let slideMenuModels: [DPSlideMenuModel] = [slideMenuMap,slideMenuRegistrations,slideMenuInvoices]
+        let slideMenuModels: [DPSlideMenuModel] = [slideMenuMap,slideMenuRegistrations]
         
         // Create leftMenuViewController with menu-array, then reset the drawer
         let leftMenuViewController: DPLeftMenuViewController = DPLeftMenuViewController(slideMenuModels: slideMenuModels, storyboard: self.storyboard)

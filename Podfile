@@ -12,4 +12,9 @@ target 'GoSafe' do
   pod 'FRDLivelyButton', '~> 1.1.3'
   pod 'SwiftValidator', :git => 'https://github.com/jpotts18/SwiftValidator.git', :branch => 'master'
  
+ target 'GoSafeTests' do
+     inherit! :search_paths
+     # Pods for testing
+ end
+
 end

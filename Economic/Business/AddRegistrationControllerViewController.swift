@@ -52,7 +52,7 @@ class AddRegistrationControllerViewController: UIViewController,UITextFieldDeleg
         if let registrationViewDataTmp = registrationViewData {
             self.headlineLabel.text = NSLocalizedString("RetRegistrering", comment: "")
             self.txtName.text = registrationViewDataTmp.name
-            self.txtProjectName.text = registrationViewDataTmp.projectName
+            self.txtProjectName.text = registrationViewDataTmp.area
             self.txtMinutesSpend.text = registrationViewDataTmp.minutesSpend
         }else{
             self.headlineLabel.text = NSLocalizedString("IndtastRegistrering", comment: "")
@@ -60,8 +60,8 @@ class AddRegistrationControllerViewController: UIViewController,UITextFieldDeleg
         self.cancelBtn.setTitle(NSLocalizedString("ForTrydKnap", comment: ""),for: .normal)
         
         self.txtName.placeholder = NSLocalizedString("Navn", comment: "")
-        self.txtProjectName.placeholder = NSLocalizedString("TidForbrugt", comment: "")
-        self.txtMinutesSpend.placeholder = NSLocalizedString("ProjektNavn", comment: "")
+        self.txtProjectName.placeholder = NSLocalizedString("OmraadeNavn", comment: "")
+        self.txtMinutesSpend.placeholder = NSLocalizedString("TidForbrugt", comment: "")
         
     }
     
@@ -104,7 +104,7 @@ class AddRegistrationControllerViewController: UIViewController,UITextFieldDeleg
         
         validator.registerField(txtMinutesSpend, errorLabel: txtMinutesSpendErrorLabel, rules: [RequiredRule(message: NSLocalizedString("PaakraevetFelt", comment: "")), FloatRule(message: NSLocalizedString("KunNummer", comment: ""))])
         
-        validator.registerField(txtProjectName, errorLabel: txtProjectNameErrorLabel, rules: [RequiredRule(message: NSLocalizedString("PaakraevetFelt", comment: "")), AlphaNumericRule(message: NSLocalizedString("KunGyldigtProjektnavn", comment: ""))])
+        validator.registerField(txtProjectName, errorLabel: txtProjectNameErrorLabel, rules: [RequiredRule(message: NSLocalizedString("PaakraevetFelt", comment: "")), AlphaNumericRule(message: NSLocalizedString("KunGyldigtAreanavn", comment: ""))])
     }
     
     
@@ -161,7 +161,7 @@ extension AddRegistrationControllerViewController{
 extension AddRegistrationControllerViewController: ValidationDelegate{
     func validationSuccessful() {
         
-        let regRegistrationViewData = RegistrationViewData(name: txtName.text!, minutesSpend: txtMinutesSpend.text!, projectName: txtProjectName.text!)
+        let regRegistrationViewData = RegistrationViewData(name: txtName.text!, minutesSpend: txtMinutesSpend.text!, area: txtProjectName.text!)
         
         addRegistrationPresenter.setRegistration(registrationViewData: regRegistrationViewData)
     }

@@ -13,7 +13,7 @@ struct Constants {
   }
   
   struct CellNames {
-    static let KInvoiceDetailCell = "InvoiceDetailCell"
+    
   }
   
   struct Configuration {

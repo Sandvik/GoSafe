@@ -13,10 +13,8 @@ class Store {
     static let sharedInstance: Store = Store()
     
     var registrationArray = [Registration]()
-    var invoicesArray = [Invoice]()
     
     private init() {
         self.registrationArray = []
-        self.invoicesArray = []
     }    
 }

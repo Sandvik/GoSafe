@@ -11,5 +11,5 @@ import Foundation
 struct RegistrationViewData{
     let name: String
     let minutesSpend: String
-    let projectName: String
+    let area: String
 }

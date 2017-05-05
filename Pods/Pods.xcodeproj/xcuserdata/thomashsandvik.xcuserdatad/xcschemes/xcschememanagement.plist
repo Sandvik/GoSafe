@@ -34,6 +34,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-GoSafeTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftValidator.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -73,6 +78,11 @@
 			<true/>
 		</dict>
 		<key>A3F5CB55CB0A83B271A6D6FE986C6809</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A66A691E46CC2584DDDBCCE61B81DCC7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
